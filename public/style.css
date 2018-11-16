@@ -4,8 +4,7 @@
 }
 
 ::selection {
-    color: #fff;
-    background-color: blue;
+    background-color: #ddd;
 }
 
 html,
