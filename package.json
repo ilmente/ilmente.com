@@ -1,0 +1,19 @@
+{
+  "name": "ilmente.com",
+  "version": "20.0.0",
+  "description": "ilmente.com",
+  "main": "index.js",
+  "repository": "https://github.com/ilmente/ilmente.com.git",
+  "author": "Alessandro Bellini <alessandro@ilmente.it>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./index.js"
+  },
+  "dependencies": {
+    "colors": "^1.3.3",
+    "express": "^4.16.4",
+    "gray-matter": "^4.0.1",
+    "ramda": "^0.26.1",
+    "showdown": "^1.9.0"
+  }
+}
