@@ -1,0 +1,21 @@
+{
+  "name": "ilmente.com",
+  "version": "20.0.0",
+  "description": "ilmente.com",
+  "main": "index.js",
+  "repository": "https://github.com/ilmente/ilmente.com.git",
+  "author": "Alessandro Bellini <alessandro@ilmente.it>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "serve": "next build && next start",
+    "deploy": "next build && next export"
+  },
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
+}
