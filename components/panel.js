@@ -1,11 +1,12 @@
 import css from 'styled-jsx/css'
 import theme from '../theme'
-import transition from './hoc/transition'
+import { animate } from '../styles/screen'
 
 const defaultStyle = css`
     div {
         padding: 0 ${theme.spacing()};
         border-left: ${theme.spacing(0.25)} solid ${theme.layout.color};
+        ${animate('fadeBorderColor')}
     }
 
     .align-right {
@@ -15,11 +16,9 @@ const defaultStyle = css`
     }
 `
 
-const Panel = ({ style, right, children }) => (
-    <div style={style} className={right && 'align-right'}>
+export default ({ right, children }) => (
+    <div className={right && 'align-right'}>
         {children}
         <style jsx>{defaultStyle}</style>
     </div>
 )
-
-export default (props) => transition(Panel, ['borderColor'])(props)
