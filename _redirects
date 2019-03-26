@@ -1,0 +1,3 @@
+### Netflify redirect
+https://ilmente.it/* https://ilmente.com/:splat 301!
+https://ilmente.netlify.com/* https://ilmente.com/:splat 301!
