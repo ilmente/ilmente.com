@@ -3,8 +3,8 @@ import theme from '../theme'
 
 const style = css`
     section {
-        margin: ${theme.spacing()} 0;
-        padding: 0 ${theme.spacing()};
+        margin: 1rem 0;
+        padding: 0 1rem;
     }
 
     div {

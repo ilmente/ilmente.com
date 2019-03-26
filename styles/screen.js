@@ -19,6 +19,10 @@ const style = css.global`
         -moz-osx-font-smoothing: grayscale;
     }
 
+    html {
+        font-size: 100%;
+    }
+
     body {
         background-color: ${theme.layout.bgColor};
         font-family: ${theme.layout.fontFamilyDefault};
@@ -29,7 +33,7 @@ const style = css.global`
     }
 
     h1, h2, h3, h4, h5, h6 {
-        margin: ${theme.spacing(3)} 0 ${theme.spacing()} 0;
+        margin: 3rem 0 1rem 0;
     }
 
     h1, h2, h3 {
@@ -57,7 +61,7 @@ const style = css.global`
     }
 
     p {
-        margin: ${theme.spacing()} 0;
+        margin: 1rem 0;
     }
 
     a {

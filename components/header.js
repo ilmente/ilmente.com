@@ -5,9 +5,9 @@ import { animate } from '../styles/screen'
 
 const style = css`
     header {
-        padding-top: ${theme.spacing(10)};
-        margin-bottom: ${theme.spacing(2)};
-        border-top: ${theme.spacing()} solid ${theme.layout.bgColor};
+        padding-top: 10rem;
+        margin-bottom: 2rem;
+        border-top: 1rem solid ${theme.layout.bgColor};
         ${animate('fadeBorderColor')}
     }
 `

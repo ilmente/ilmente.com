@@ -1,6 +1,5 @@
 import { createContext } from 'react'
 
-const spacingUnit = 16;
 const maxWidth = 840;
 
 const theme = {
@@ -8,7 +7,7 @@ const theme = {
         maxWidth: `${maxWidth}px`,
         fontFamilyDefault: "'Inconsolata', monospace",
         fontFamilyAlt: "'Pacifico', serif",
-        fontSize: `${spacingUnit}px`,
+        fontSize: '1rem',
         lineHeight: '1.5',
         color: '#333',
         colorAlt: '#bbb',
@@ -17,29 +16,27 @@ const theme = {
 
     headings: {
         narrow: {
-            h1: `${spacingUnit * 3.5}px`,
-            h2: `${spacingUnit * 2.25}px`,
-            h3: `${spacingUnit * 1.75}px`,
-            h4: `${spacingUnit * 1.5}px`,
-            h5: `${spacingUnit * 1.25}px`,
-            h6: `${spacingUnit * 1}px`
+            h1: '3.5rem',
+            h2: '2.25rem',
+            h3: '1.75rem',
+            h4: '1.5rem',
+            h5: '1.25rem',
+            h6: '1rem'
         },
 
         wide: {
-            h1: `${spacingUnit * 6}px`,
-            h2: `${spacingUnit * 3}px`,
-            h3: `${spacingUnit * 2.5}px`,
-            h4: `${spacingUnit * 2}px`,
-            h5: `${spacingUnit * 1.5}px`,
-            h6: `${spacingUnit * 1}px`
+            h1: '6rem',
+            h2: '3rem',
+            h3: '2.5rem',
+            h4: '2rem',
+            h5: '1.5rem',
+            h6: '1rem'
         }
     },
 
     breakpoints: {
         wide: `${maxWidth}px`
-    },
-
-    spacing: (units = 1) => `${spacingUnit * units}px`
+    }
 }
 
 export default theme;

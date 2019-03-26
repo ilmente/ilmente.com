@@ -5,7 +5,7 @@ import theme from '../theme'
 
 const style = css`
     footer {
-        padding-top: ${theme.spacing(4)};
+        padding-top: 4rem;
         color: ${theme.layout.colorAlt};
         text-align: right;
     }

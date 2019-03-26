@@ -14,7 +14,7 @@ const defaultStyle = css`
 
     li {
         display: inline-block;
-        margin-right: ${theme.spacing()};
+        margin-right: 1rem;
     }
 
     li:last-child {
