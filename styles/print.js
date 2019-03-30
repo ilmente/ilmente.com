@@ -16,8 +16,10 @@ const style = css.global`
         }
 
         html {
+            position: static;
             min-height: 100%;
             font-size: 75%;
+            overflow: initial;
         }
 
         body {

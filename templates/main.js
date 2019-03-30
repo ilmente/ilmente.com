@@ -5,6 +5,7 @@ import Section from '../components/section'
 import Panel from '../components/panel'
 import Menu from '../components/menu'
 import Drawer from '../components/drawer'
+import Icon from '../components/icon'
 import IconSprite from '../components/icon-sprite'
 import ScreenStyle from '../styles/screen'
 import PrintStyle from '../styles/print'
@@ -25,7 +26,13 @@ const Main = ({ title, printTitle, children }) => (
             </div>
             <main>{children}</main>
             <Footer>
-                ilmente.com | <a href="https://github.com/ilmente/ilmente.com" target="_blank">Source code</a> | MIT licence
+                <a href="https://linkedin.com/ilmente" target="_blank">
+                    <Icon name="linkedin" />
+                </a> <a href="https://github.com/ilmente/ilmente.com" target="_blank">
+                    <Icon name="github" />
+                </a> <a href="https://instagram.com/ilmente" target="_blank">
+                    <Icon name="instagram" />
+                </a> | MIT licence | ilmente.com
             </Footer>
         </Drawer>
         <ScreenStyle />
