@@ -21,7 +21,9 @@ const style = css.global`
         }
 
         body {
+            position: static;
             padding: 4rem 4rem 4rem 2rem;
+            overflow: auto;
         }
 
         h2, h3 {

@@ -30,13 +30,14 @@ const style = css`
 
     @media only screen and (max-width: ${theme.breakpoints.wide}rem) {
         ul {
+            padding-top: 0.5rem;
             text-align: right;
         }
 
         li {
             display: block;
             margin: 0;
-            padding: 0.75rem 1rem;
+            padding: 0.5rem 1rem;
         }
 
         a {

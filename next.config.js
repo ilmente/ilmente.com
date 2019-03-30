@@ -6,7 +6,8 @@ module.exports = {
         },
         menus: {
             main: [
-                { label: 'About', href: '/' }
+                { label: 'About', href: '/' },
+                { label: 'Resume', href: '/resume' }
             ]
         }
     }

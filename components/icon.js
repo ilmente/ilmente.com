@@ -1,21 +1,23 @@
 import css from 'styled-jsx/css'
-import theme from '../theme'
-import { animate } from '../styles/screen'
 
 const style = css`
     svg {
         fill: currentColor;
-        width: 1rem;
-        height: 1rem;
         display: inline-block;
         vertical-align: middle;
         user-select: none;
     }
 `
 
-export default ({ name }) => (
+export default ({ name, size = 1 }) => (
     <svg>
         <use xlinkHref={`#:${name}`} />
         <style jsx>{style}</style>
+        <style jsx>{`
+            svg {
+                width: ${size}rem;
+                height: ${size}rem;
+            }
+        `}</style>
     </svg>
 )

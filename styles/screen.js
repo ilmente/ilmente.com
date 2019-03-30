@@ -24,6 +24,11 @@ const style = css.global`
     }
 
     body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         background-color: ${theme.layout.bgColor};
         font-family: ${theme.layout.fontFamilyDefault};
         font-size: ${theme.layout.fontSize}rem;

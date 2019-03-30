@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import css from 'styled-jsx/css'
 import Menu from '../components/menu'
-import Icon from '../components/icon'
+import Hamburger from '../components/hamburger'
 import theme from '../theme'
 import { animate } from '../styles/screen'
 
@@ -15,10 +15,6 @@ const style = css`
         transition: transform 500ms;
     }
 
-    .is-open {
-        transform: translateX(-${theme.layout.drawerWidth}rem);
-    }
-
     aside {
         position: absolute;
         top: 0;
@@ -26,6 +22,7 @@ const style = css`
         right: -${theme.layout.drawerWidth}rem;
         overflow-x: hidden;
         width: ${theme.layout.drawerWidth}rem;
+        overflow-y: auto;
         ${animate('fadeBgColor')}
     }
 
@@ -38,24 +35,46 @@ const style = css`
         overflow-y: auto;
     }
 
-    .is-open section {
-        overflow-y: hidden;
-    }
-
     a {
         position: absolute;
-        top: 1.75rem;
+        top: 2rem;
         right: 1rem;
     }
 
+    @media only screen and (max-width: ${theme.breakpoints.wide}rem) {
+        .is-open {
+            transform: translateX(-${theme.layout.drawerWidth}rem);
+        }
+
+        .is-open section {
+            overflow-y: hidden;
+        }
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints.wide}rem) {
+        a {
+            display: none;
+        }
+    }
+
     @media only print {
+        div {
+            position: static;
+            transition: none;
+        }
+
+        section {
+            position: static;
+            overflow: initial;
+        }
+
         aside, a {
             display: none;
         }
 
         .is-open {
-            position: absolute;
-            transform: 0;
+            position: static;
+            transform: none;
         }
     }
 `
@@ -70,8 +89,8 @@ export default ({ children }) => {
                 <Menu menuId="main" />
             </aside>
             <section>
-                <a className="view-default" onClick={onClick}>
-                    <Icon name="bars" />
+                <a onClick={onClick}>
+                    <Hamburger open={isOpen} />
                 </a>
                 {children}
             </section>
