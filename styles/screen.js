@@ -26,31 +26,69 @@ const style = css.global`
     body {
         background-color: ${theme.layout.bgColor};
         font-family: ${theme.layout.fontFamilyDefault};
-        font-size: ${theme.layout.fontSize};
+        font-size: ${theme.layout.fontSize}rem;
         line-height: ${theme.layout.lineHeight};
         color: ${theme.layout.color};
-        overflow-x: hidden;
+        overflow: hidden;
+    }
+
+    p {
+        margin: ${theme.spacing.containerTop}rem 0 ${theme.spacing.containerBottom}rem 0;
+    }
+
+    ul, ol {
+        display: block;
+        margin: ${theme.spacing.containerTop}rem 0 ${theme.spacing.containerBottom}rem 0;
+    }
+
+    ol {
+        counter-reset: li;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ol li {
+        counter-increment: li;
+    }
+
+    li::before {
+        display: inline-block;
+        width: 1.5rem;
+    }
+
+    ul li::before {
+        content: '●';
+    }
+
+    ol li::before {
+        content: counter(li);
     }
 
     h1, h2, h3, h4, h5, h6 {
-        margin: 3rem 0 1rem 0;
+        margin: ${theme.spacing.headingTop}rem 0 ${theme.spacing.headingBottom}rem 0;
     }
 
-    h1, h2, h3 {
-        font-family: ${theme.layout.fontFamilyAlt};
-    }
-
-    h4, h5, h6 {
-        font-family: ${theme.layout.fontFamilyDefault};
+    h2, h3, h4 {
         font-weight: bold;
     }
 
-    h1 { font-size: ${theme.headings.narrow.h1}; }
-    h2 { font-size: ${theme.headings.narrow.h2}; }
-    h3 { font-size: ${theme.headings.narrow.h3}; }
-    h4 { font-size: ${theme.headings.narrow.h4}; }
-    h5 { font-size: ${theme.headings.narrow.h5}; }
-    h6 { font-size: ${theme.headings.narrow.h6}; }
+    h1 {
+        font-family: ${theme.layout.fontFamilyAlt};
+        font-size: ${theme.headings.default.h1}rem;
+    }
+
+    h2 { font-size: ${theme.headings.default.h2}rem; }
+    h3 { font-size: ${theme.headings.default.h3}rem; }
+    h4 { font-size: ${theme.headings.default.h4}rem; }
+
+    h5 {
+        font-size: ${theme.headings.default.h5}rem;
+        font-style: italic;
+    }
+
+    h6 { font-size: ${theme.headings.default.h6}rem; }
 
     em, i {
         font-style: italic;
@@ -58,10 +96,6 @@ const style = css.global`
 
     strong, b {
         font-weight: bold;
-    }
-
-    p {
-        margin: 1rem 0;
     }
 
     a {
@@ -73,13 +107,18 @@ const style = css.global`
         text-decoration: underline;
     }
 
-    @media (min-width: ${theme.breakpoints.wide}) {
-        h1 { font-size: ${theme.headings.wide.h1}; }
-        h2 { font-size: ${theme.headings.wide.h2}; }
-        h3 { font-size: ${theme.headings.wide.h3}; }
-        h4 { font-size: ${theme.headings.wide.h4}; }
-        h5 { font-size: ${theme.headings.wide.h5}; }
-        h6 { font-size: ${theme.headings.wide.h6}; }
+    @media only screen and (max-width: ${theme.breakpoints.wide}rem) {
+        .view-wide {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: ${theme.breakpoints.wide}rem) {
+        h1 { font-size: ${theme.headings.wide.h1}rem; }
+
+        .view-default {
+            display: none;
+        }
     }
 `
 
@@ -93,6 +132,10 @@ export default () => {
                 ::selection {
                     background-color: ${color};
                     color: ${theme.layout.bgColor};
+                }
+
+                li::before {
+                    ${animate('fadeColor')}
                 }
 
                 a {

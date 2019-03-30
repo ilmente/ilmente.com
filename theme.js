@@ -1,47 +1,44 @@
-import { createContext } from 'react'
+export default {
+    breakpoints: {
+        wide: 53
+    },
 
-const maxWidth = 840;
+    grid: {
+        columns: 12,
+        gutter: 1
+    },
 
-const theme = {
+    spacing: {
+        headingTop: 2,
+        headingBottom: 1,
+        containerTop: 1,
+        containerBottom: 1
+    },
+
     layout: {
-        maxWidth: `${maxWidth}px`,
-        fontFamilyDefault: "'Inconsolata', monospace",
-        fontFamilyAlt: "'Pacifico', serif",
-        fontSize: '1rem',
-        lineHeight: '1.5',
+        maxWidth: 51,
+        drawerWidth: 15,
+        fontFamilyDefault: 'Inconsolata, monospace',
+        fontFamilyAlt: 'Pacifico, serif',
+        fontSize: 1,
+        lineHeight: 1.4,
         color: '#333',
-        colorAlt: '#bbb',
+        colorAlt: '#aaa',
         bgColor: '#fff'
     },
 
     headings: {
-        narrow: {
-            h1: '3.5rem',
-            h2: '2.25rem',
-            h3: '1.75rem',
-            h4: '1.5rem',
-            h5: '1.25rem',
-            h6: '1rem'
+        default: {
+            h1: 3.5,
+            h2: 1.75,
+            h3: 1.35,
+            h4: 1,
+            h5: 1,
+            h6: 1
         },
 
         wide: {
-            h1: '6rem',
-            h2: '3rem',
-            h3: '2.5rem',
-            h4: '2rem',
-            h5: '1.5rem',
-            h6: '1rem'
+            h1: 6
         }
-    },
-
-    breakpoints: {
-        wide: `${maxWidth}px`
     }
 }
-
-export default theme;
-
-export const AccentContext = createContext({
-    color: theme.layout.color,
-    prevColor: theme.layout.color
-})

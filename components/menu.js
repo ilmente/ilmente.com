@@ -2,19 +2,22 @@ import { useContext } from 'react'
 import NextLink from 'next/link'
 import css from 'styled-jsx/css'
 import theme from '../theme'
-import Section from '../components/section'
-import Panel from '../components/panel'
 import AccentContext from '../context/accent'
 import RoutingContext from '../context/routing'
 
-const defaultStyle = css`
+const style = css`
     ul {
-        display: block;
+        padding-left: 0;
     }
 
     li {
         display: inline-block;
+        margin: 0;
         margin-right: 1rem;
+    }
+
+    li::before {
+        content: none;
     }
 
     li:last-child {
@@ -23,6 +26,29 @@ const defaultStyle = css`
 
     .is-current {
         font-weight: bold;
+    }
+
+    @media only screen and (max-width: ${theme.breakpoints.wide}rem) {
+        ul {
+            text-align: right;
+        }
+
+        li {
+            display: block;
+            margin: 0;
+            padding: 0.75rem 1rem;
+        }
+
+        a {
+            color: ${theme.layout.bgColor};
+            animation: none;
+        }
+    }
+
+    @media only print {
+        nav {
+            display: none;
+        }
     }
 `
 
@@ -39,21 +65,17 @@ export default ({ menuId }) => {
     const isCurrent = (href) => path === href
 
     return (
-        <Section>
-            <nav>
-                <Panel>
-                    <ul>
-                        {menu.map(link => (
-                            <li className={`${isCurrent(link.href) && 'is-current'}`} key={link.href}>
-                                <NextLink href={to(link.href)} as={link.href}>
-                                    <a>{link.label}</a>
-                                </NextLink>
-                            </li>
-                        ))}
-                    </ul>
-                </Panel>
-            </nav>
-            <style jsx>{defaultStyle}</style>
-        </Section>
+        <nav>
+            <ul>
+                {menu.map(link => (
+                    <li className={`${isCurrent(link.href) && 'is-current'}`} key={link.href}>
+                        <NextLink href={to(link.href)} as={link.href}>
+                            <a>{link.label}</a>
+                        </NextLink>
+                    </li>
+                ))}
+            </ul>
+            <style jsx>{style}</style>
+        </nav>
     )
 }

@@ -2,7 +2,7 @@ import css from 'styled-jsx/css'
 import theme from '../theme'
 import { animate } from '../styles/screen'
 
-const defaultStyle = css`
+const style = css`
     div {
         padding: 0 1rem;
         border-left: 0.25rem solid ${theme.layout.color};
@@ -19,6 +19,6 @@ const defaultStyle = css`
 export default ({ right, children }) => (
     <div className={right && 'align-right'}>
         {children}
-        <style jsx>{defaultStyle}</style>
+        <style jsx>{style}</style>
     </div>
 )

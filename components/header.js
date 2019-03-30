@@ -5,10 +5,18 @@ import { animate } from '../styles/screen'
 
 const style = css`
     header {
-        padding-top: 10rem;
         margin-bottom: 2rem;
+        padding-top: 10rem;
         border-top: 1rem solid ${theme.layout.bgColor};
         ${animate('fadeBorderColor')}
+    }
+
+    @media only print {
+        header {
+            margin-bottom: 0rem;
+            padding-top: 0rem;
+            border-top: none;
+        }
     }
 `
 

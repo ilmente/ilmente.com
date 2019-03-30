@@ -8,12 +8,18 @@ const style = css`
     }
 
     div {
-        max-width: ${theme.layout.maxWidth};
+        max-width: ${theme.layout.maxWidth}rem;
         margin: auto;
     }
 
     .is-wide {
         max-width: 100%;
+    }
+
+    @media only print {
+        div {
+            max-width: 100%;
+        }
     }
 `
 

@@ -9,6 +9,12 @@ const style = css`
         color: ${theme.layout.colorAlt};
         text-align: right;
     }
+
+    @media only print {
+        footer {
+            display: none;
+        }
+    }
 `
 
 export default ({ children }) => (
