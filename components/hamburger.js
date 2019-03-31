@@ -15,6 +15,7 @@ const style = css`
         position: absolute;
         left: 0;
         width: 100%;
+        height: 4px;
         opacity: 1;
         transform: rotate(0deg);
         transition: all 250ms ease-in-out;
@@ -29,6 +30,7 @@ const style = css`
     .bar-3 {
         top: 50%;
         bottom: 50%;
+        margin-top: -2px;
     }
 
     .bar-4 {
@@ -42,12 +44,20 @@ const style = css`
         left: 50%;
     }
 
+    .is-open .bar-1 {
+        top: 50%;
+    }
+
     .is-open .bar-2 {
         transform: rotate(45deg);
     }
 
     .is-open .bar-3 {
         transform: rotate(-45deg);
+    }
+
+    .is-open .bar-4 {
+        bottom: 50%;
     }
 `
 
@@ -62,23 +72,6 @@ export default ({ open, size = 1.5 }) => (
             .hamburger {
                 width: ${size}rem;
                 height: ${(size / 4) * 3}rem;
-            }
-
-            .bar {
-                height: ${(size / 20) * 3}rem;
-            }
-
-            .bar-2,
-            .bar-3 {
-                margin-top: -${(size / 40) * 3}rem;
-            }
-
-            .is-open .bar-1 {
-                top: ${(size / 4) * 1}rem;
-            }
-
-            .is-open .bar-4 {
-                bottom: ${(size / 4) * 1}rem;
             }
         `}</style>
     </span>

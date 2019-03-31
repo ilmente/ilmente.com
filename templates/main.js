@@ -32,7 +32,7 @@ const Main = ({ title, printTitle, children }) => (
                     <Icon name="github" />
                 </a> <a href="https://instagram.com/ilmente" target="_blank">
                     <Icon name="instagram" />
-                </a> | MIT licence | ilmente.com
+                </a> | ilmente.com
             </Footer>
         </Drawer>
         <ScreenStyle />
