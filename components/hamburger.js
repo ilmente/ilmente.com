@@ -1,11 +1,12 @@
 import css from 'styled-jsx/css'
-import theme from '../theme'
 import { animate } from '../styles/screen'
 
 const style = css`
     .hamburger {
         display: inline-block;
         position: relative;
+        width: 24px;
+        height: 18px;
         margin: 0 auto;
         cursor: pointer;
     }
@@ -61,18 +62,12 @@ const style = css`
     }
 `
 
-export default ({ open, size = 1.5 }) => (
+export default ({ open }) => (
     <span className={`hamburger ${open && 'is-open'}`}>
         <span className="bar bar-1"></span>
         <span className="bar bar-2"></span>
         <span className="bar bar-3"></span>
         <span className="bar bar-4"></span>
         <style jsx>{style}</style>
-        <style jsx>{`
-            .hamburger {
-                width: ${size}rem;
-                height: ${(size / 4) * 3}rem;
-            }
-        `}</style>
     </span>
 )

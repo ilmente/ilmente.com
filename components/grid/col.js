@@ -16,12 +16,7 @@ const style = css.global`
     .col {
         flex-grow: 0;
         flex-basis: auto;
-        margin: 0 ${theme.grid.gutter}rem ${theme.grid.gutter}rem 0;
-    }
-
-    .col > div {
-        margin-top: -${theme.grid.gutter}rem;
-        margin-bottom: -${theme.grid.gutter}rem;
+        margin: ${theme.grid.gutter / 2}rem;
     }
 
     ${generateColStyles()}
@@ -47,7 +42,7 @@ const getColClassNames = (props) => {
 
 export default ({ children, ...props }) => (
     <div className={`col ${getColClassNames(props)}`}>
-        <div>{children}</div>
+        {children}
         <style jsx>{style}</style>
     </div>
 )

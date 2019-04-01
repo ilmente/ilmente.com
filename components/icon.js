@@ -2,14 +2,13 @@ import css from 'styled-jsx/css'
 
 const style = css`
     svg {
-        fill: currentColor;
         display: inline-block;
         vertical-align: middle;
         user-select: none;
     }
 `
 
-export default ({ name, size = 1 }) => (
+export default ({ name, color, size = 1 }) => (
     <svg>
         <use xlinkHref={`#:${name}`} />
         <style jsx>{style}</style>
@@ -17,6 +16,7 @@ export default ({ name, size = 1 }) => (
             svg {
                 width: ${size}rem;
                 height: ${size}rem;
+                fill: ${color ? color : 'currentColor'};
             }
         `}</style>
     </svg>

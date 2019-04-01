@@ -8,22 +8,16 @@ export default {
         gutter: 1
     },
 
-    spacing: {
-        headingTop: 2,
-        headingBottom: 1,
-        containerTop: 1,
-        containerBottom: 1
-    },
-
     layout: {
         maxWidth: 51,
         drawerWidth: 15,
         fontFamilyDefault: 'Inconsolata, monospace',
         fontFamilyAlt: 'Pacifico, serif',
         fontSize: 1,
+        fontSizeSmall: 0.9,
         lineHeight: 1.4,
         color: '#333',
-        colorAlt: '#aaa',
+        colorAlt: '#9c9c9c',
         bgColor: '#fff'
     },
 

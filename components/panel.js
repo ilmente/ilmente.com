@@ -14,6 +14,12 @@ const style = css`
         border-right: 0.25rem solid ${theme.layout.color};
         text-align: right;
     }
+
+    @media only print {
+        div {
+            border-left-width: 2px;
+        }
+    }
 `
 
 export default ({ right, children }) => (

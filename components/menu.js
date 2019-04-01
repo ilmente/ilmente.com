@@ -14,6 +14,7 @@ const style = css`
         display: inline-block;
         margin: 0;
         margin-right: 1rem;
+        padding: 0;
     }
 
     li::before {

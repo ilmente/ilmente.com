@@ -1,7 +1,4 @@
-import { useContext } from 'react'
 import css from 'styled-jsx/css'
-import theme from '../theme'
-import AccentContext from '../context/accent'
 
 const style = css.global`
     @media only screen {
@@ -18,19 +15,13 @@ const style = css.global`
         html {
             position: static;
             min-height: 100%;
-            font-size: 75%;
+            font-size: 70%;
             overflow: initial;
         }
 
         body {
             position: static;
-            padding: 4rem 4rem 4rem 2rem;
             overflow: auto;
-        }
-
-        h2, h3 {
-            font-family: ${theme.layout.fontFamilyDefault};
-            font-weight: bold;
         }
 
         .only-screen {
@@ -39,19 +30,8 @@ const style = css.global`
     }
 `
 
-export default () => {
-    const { color } = useContext(AccentContext)
-
-    return (
-        <>
-            <style jsx>{style}</style>
-            <style jsx global>{`
-                @media only print {
-                    html {
-                        border-left: 4rem solid ${color};
-                    }
-                }
-            `}</style>
-        </>
-    )
-}
+export default () => (
+    <>
+        <style jsx>{style}</style>
+    </>
+)

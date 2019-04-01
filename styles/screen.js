@@ -43,13 +43,21 @@ const style = css.global`
         overflow: hidden;
     }
 
+    .alt {
+        color: ${theme.layout.colorAlt};
+    }
+
     p {
-        margin: ${theme.spacing.containerTop}rem 0 ${theme.spacing.containerBottom}rem 0;
+        margin: 1rem 0;
     }
 
     ul, ol {
         display: block;
-        margin: ${theme.spacing.containerTop}rem 0 ${theme.spacing.containerBottom}rem 0;
+        margin: 1rem 0;
+    }
+
+    .space > li {
+        margin: 1rem 0;
     }
 
     ol {
@@ -57,6 +65,7 @@ const style = css.global`
     }
 
     li {
+        padding-left: 1.5rem;
         list-style: none;
     }
 
@@ -66,11 +75,13 @@ const style = css.global`
 
     li::before {
         display: inline-block;
+        margin-left: -1.5rem;
         width: 1.5rem;
     }
 
     ul li::before {
         content: '●';
+        float: left;
     }
 
     ol li::before {
@@ -78,7 +89,7 @@ const style = css.global`
     }
 
     h1, h2, h3, h4, h5, h6 {
-        margin: ${theme.spacing.headingTop}rem 0 ${theme.spacing.headingBottom}rem 0;
+        margin: 2rem 0 1rem 0;
     }
 
     h2, h3, h4 {
@@ -101,12 +112,30 @@ const style = css.global`
 
     h6 { font-size: ${theme.headings.default.h6}rem; }
 
+    .even {
+        margin-top: 1rem;
+    }
+
+    .flat {
+        margin-top: 0;
+    }
+
+    .sub {
+        margin-top: -1rem;
+        color: ${theme.layout.colorAlt};
+    }
+
     em, i {
         font-style: italic;
     }
 
     strong, b {
         font-weight: bold;
+    }
+
+    small {
+        font-size: ${theme.layout.fontSizeSmall}rem;
+        line-height: 1;
     }
 
     a {
