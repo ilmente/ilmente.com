@@ -43,10 +43,6 @@ const style = css.global`
         overflow: hidden;
     }
 
-    .alt {
-        color: ${theme.layout.colorAlt};
-    }
-
     p {
         margin: 1rem 0;
     }
@@ -56,35 +52,37 @@ const style = css.global`
         margin: 1rem 0;
     }
 
-    .space > li {
-        margin: 1rem 0;
-    }
-
-    ol {
-        counter-reset: li;
-    }
-
     li {
-        padding-left: 1.5rem;
         list-style: none;
     }
 
-    ol li {
+    ol.numbers {
+        counter-reset: li;
+    }
+
+    .bullet li,
+    .number li {
+        padding-left: 1.5rem;
+    }
+
+    ol.number li {
         counter-increment: li;
     }
 
-    li::before {
+    .bullet li::before,
+    .number li::before {
         display: inline-block;
         margin-left: -1.5rem;
         width: 1.5rem;
     }
 
-    ul li::before {
-        content: '●';
+    ul.bullet li::before {
+        content: '⎼';
         float: left;
+        margin-top: -0.15rem;
     }
 
-    ol li::before {
+    ol.number li::before {
         content: counter(li);
     }
 
@@ -112,19 +110,6 @@ const style = css.global`
 
     h6 { font-size: ${theme.headings.default.h6}rem; }
 
-    .even {
-        margin-top: 1rem;
-    }
-
-    .flat {
-        margin-top: 0;
-    }
-
-    .sub {
-        margin-top: -1rem;
-        color: ${theme.layout.colorAlt};
-    }
-
     em, i {
         font-style: italic;
     }
@@ -146,6 +131,15 @@ const style = css.global`
     a:hover {
         text-decoration: underline;
     }
+
+    .alt { color: ${theme.layout.colorAlt}; }
+    .no-margin { margin: 0 }
+    .no-margin-x { margin-left: 0; margin-right: 0; }
+    .no-margin-y { margin-top: 0; margin-bottom: 0; }
+    .no-margin-left { margin-left: 0 }
+    .no-margin-right { margin-right: 0 }
+    .no-margin-top { margin-top: 0 }
+    .no-margin-bottom { margin-bottom: 0 }
 
     @media only screen and (max-width: ${theme.breakpoints.wide}rem) {
         .view-wide {

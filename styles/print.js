@@ -1,4 +1,5 @@
 import css from 'styled-jsx/css'
+import theme from '../theme'
 
 const style = css.global`
     @media only screen {
@@ -17,11 +18,17 @@ const style = css.global`
             min-height: 100%;
             font-size: 70%;
             overflow: initial;
+
         }
 
         body {
             position: static;
             overflow: auto;
+            color: ${theme.print.color};
+        }
+
+        .alt {
+            color: ${theme.print.colorAlt};
         }
 
         .only-screen {
