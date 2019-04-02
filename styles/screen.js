@@ -120,7 +120,6 @@ const style = css.global`
 
     small {
         font-size: ${theme.layout.fontSizeSmall}rem;
-        line-height: 1;
     }
 
     a {

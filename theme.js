@@ -17,13 +17,8 @@ export default {
         fontSizeSmall: 0.9,
         lineHeight: 1.4,
         color: '#333',
-        colorAlt: '#b5b5b5',
+        colorAlt: '#a3a3a3',
         bgColor: '#fff'
-    },
-
-    print: {
-        color: '#111',
-        colorAlt: '#ddd'
     },
 
     headings: {

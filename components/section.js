@@ -17,8 +17,13 @@ const style = css`
     }
 
     @media only print {
+        section {
+            padding: 0;
+        }
+
         div {
             max-width: 100%;
+            margin: 0;
         }
     }
 `

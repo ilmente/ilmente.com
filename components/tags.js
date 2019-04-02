@@ -1,11 +1,9 @@
 import css from 'styled-jsx/css'
-import theme from '../theme'
 
 const style = css`
-    div {
-        margin-top: 0.1rem;
-        font-size: ${theme.layout.fontSizeSmall}rem;
-        color: ${theme.layout.colorAlt};
+    small {
+        display: block;
+        padding-top: 0.1rem;
     }
 `
 
@@ -13,7 +11,7 @@ const getTags = (names) => names.map(name => `<em>#${name}</em>`).join(', ')
 
 export default ({ names }) => (
     <>
-        <div dangerouslySetInnerHTML={{ __html: getTags(names) }}></div>
+        <small className="alt" dangerouslySetInnerHTML={{ __html: getTags(names) }}></small>
         <style jsx>{style}</style>
     </>
 )

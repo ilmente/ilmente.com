@@ -18,7 +18,7 @@ export default () => (
             <p>
                 I'm from Pistoia, a small town in Italy. I spend there quite some
                 time, but I live and work in <strong>Berlin</strong>.
-                Let's meet for a coffee if you drop by. Just let me know!
+                Let's meet for a coffee if you drop by.
             </p>
         </Section>
     </Layout>
