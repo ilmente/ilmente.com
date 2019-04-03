@@ -8,7 +8,7 @@ import Tags from '../components/tags'
 import { getQuery } from '../libs/location'
 
 export default withRouter(({ router }) => {
-    const { address, mobile, email } = getQuery()
+    const { address, mobile, email } = router.query
 
     return (
         <Layout title="Resume" printTitle="Alessandro Bellini" color="#1780CC">
