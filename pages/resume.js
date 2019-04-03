@@ -5,17 +5,10 @@ import Row from '../components/grid/row'
 import Col from '../components/grid/col'
 import Panel from '../components/panel'
 import Tags from '../components/tags'
+import { getQuery } from '../libs/location'
 
 export default withRouter(({ router }) => {
-    let address = null
-    let mobile = null
-    let email = null
-
-    if (process.browser) {
-        address = router.query.address
-        mobile = router.query.mobile
-        email = router.query.email
-    }
+    const { address, mobile, email } = getQuery()
 
     return (
         <Layout title="Resume" printTitle="Alessandro Bellini" color="#1780CC">
@@ -24,10 +17,10 @@ export default withRouter(({ router }) => {
                     <Col wide="4" print="4">
                         <h2>Contacts</h2>
                         <ul className="bullet">
-                            {address && (<li>{address}</li>)}
-                            {mobile && (<li>{mobile}</li>)}
+                            {process.browser && address && (<li>{address}</li>)}
+                            {process.browser && mobile && (<li>{mobile}</li>)}
                             <li><a href="https://ilmente.com" taregt="_blank">ilmente.com</a></li>
-                            {email && (<li><a href={`mailto:${email}`} taregt="_blank">{email}</a></li>)}
+                            {process.browser && email && (<li><a href={`mailto:${email}`} taregt="_blank">{email}</a></li>)}
                             <li><a href="https://www.linkedin.com/in/ilmente" target="_blank">linkedin.com/in/ilmente</a></li>
                             <li><a href="https://github.com/ilmente" target="_blank">github.com/ilmente</a></li>
                         </ul>
