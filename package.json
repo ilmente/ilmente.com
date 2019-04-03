@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "serve": "next build && next start",
-    "deploy": "next build && next export && cp _redirects out/_redirects"
+    "deploy": "next build && next export -o public && cp _redirects public/_redirects"
   },
   "dependencies": {
     "next": "^8.0.3",

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { withRouter } from 'next/router'
-import AccentContext from '../../context/accent'
-import RoutingContext from '../../context/routing'
+import AccentContext from '../../libs/accent-context'
+import '../../libs/router'
 
 export default (Template) => withRouter((props) => {
     const { title, color, router } = props;
@@ -32,9 +32,7 @@ export default (Template) => withRouter((props) => {
                 <title>{pageTitle}</title>
             </Head>
             <AccentContext.Provider value={{ color, prevColor }}>
-                <RoutingContext.Provider value={{ path: router.pathname, query: router.query }}>
-                    <Template {...layoutProps} />
-                </RoutingContext.Provider>
+                <Template {...layoutProps} />
             </AccentContext.Provider>
         </>
     )

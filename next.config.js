@@ -1,4 +1,9 @@
 module.exports = {
+    exportPathMap: async (defaultPathMap) => ({
+        '/': { page: '/' },
+        '/resume.html': { page: '/resume' }
+    }),
+
     env: {
         site: {
             name: 'ilmente.com',

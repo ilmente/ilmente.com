@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import css from 'styled-jsx/css'
 import theme from '../theme'
-import AccentContext from '../context/accent'
+import AccentContext from '../libs/accent-context'
 
 export const animate = (name) => `animation: ${name} 1s linear forwards;`
 
@@ -132,13 +132,14 @@ const style = css.global`
     }
 
     .alt { color: ${theme.layout.colorAlt}; }
-    .no-margin { margin: 0 }
+
+    .no-margin { margin: 0; }
     .no-margin-x { margin-left: 0; margin-right: 0; }
     .no-margin-y { margin-top: 0; margin-bottom: 0; }
-    .no-margin-left { margin-left: 0 }
-    .no-margin-right { margin-right: 0 }
-    .no-margin-top { margin-top: 0 }
-    .no-margin-bottom { margin-bottom: 0 }
+    .no-margin-left { margin-left: 0; }
+    .no-margin-right { margin-right: 0; }
+    .no-margin-top { margin-top: 0; }
+    .no-margin-bottom { margin-bottom: 0; }
 
     @media only screen and (max-width: ${theme.breakpoints.wide}rem) {
         .view-wide {
@@ -157,7 +158,6 @@ const style = css.global`
 
 export default () => {
     const { color, prevColor } = useContext(AccentContext)
-
     return (
         <>
             <style jsx>{style}</style>

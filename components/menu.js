@@ -1,9 +1,9 @@
 import { useContext } from 'react'
+import { withRouter } from 'next/router'
 import NextLink from 'next/link'
 import css from 'styled-jsx/css'
 import theme from '../theme'
-import AccentContext from '../context/accent'
-import RoutingContext from '../context/routing'
+import AccentContext from '../libs/accent-context'
 
 const style = css`
     ul {
@@ -54,9 +54,8 @@ const style = css`
     }
 `
 
-export default ({ menuId }) => {
+export default withRouter(({ menuId, router }) => {
     const { color } = useContext(AccentContext)
-    const { path } = useContext(RoutingContext)
     const menu = process.env.menus[menuId];
 
     const to = (href) => ({
@@ -64,7 +63,7 @@ export default ({ menuId }) => {
         query: { color }
     })
 
-    const isCurrent = (href) => path === href
+    const isCurrent = (href) => router.path === href
 
     return (
         <nav>
@@ -80,4 +79,4 @@ export default ({ menuId }) => {
             <style jsx>{style}</style>
         </nav>
     )
-}
+})

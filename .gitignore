@@ -20,4 +20,5 @@ GTAGS
 # Project
 node_modules
 out
+public
 .next

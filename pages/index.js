@@ -1,5 +1,7 @@
 import Layout from '../templates/main'
 import Section from '../components/section'
+import '../components/grid/row'
+import '../components/grid/col'
 
 export default () => (
     <Layout color="#159192">

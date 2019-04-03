@@ -11,41 +11,15 @@ const style = css.global`
         margin: -${theme.grid.gutter / 2}rem;
     }
 
-    .top {
-        align-items: flex-start;
-    }
-
-    .bottom {
-        align-items: flex-end;
-    }
-
-    .left {
-        justify-content: flex-start;
-    }
-
-    .right {
-        justify-content: flex-end;
-    }
-
-    .center {
-        justify-content: center;
-    }
-
-    .middle {
-        align-items: center;
-    }
-
-    .justify {
-        justify-content: space-between;
-    }
-
-    .stretch {
-        align-items: stretch;
-    }
-
-    .nowrap {
-        flex-wrap: nowrap;
-    }
+    .top { align - items: flex - start; }
+    .bottom { align - items: flex - end; }
+    .left { justify - content: flex - start; }
+    .right { justify - content: flex - end; }
+    .center { justify - content: center; }
+    .middle { align - items: center; }
+    .justify { justify - content: space - between; }
+    .stretch { align - items: stretch; }
+    .nowrap { flex - wrap: nowrap; }
 `
 
 const getClassNames = (props) => {
