@@ -1,7 +1,7 @@
 module.exports = {
     exportPathMap: async (defaultPathMap) => ({
         '/': { page: '/' },
-        '/resume.html': { page: '/resume', query: { email: 'test' } }
+        '/resume.html': { page: '/resume' }
     }),
 
     env: {

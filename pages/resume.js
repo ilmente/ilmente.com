@@ -7,7 +7,15 @@ import Panel from '../components/panel'
 import Tags from '../components/tags'
 
 export default withRouter(({ router }) => {
-    const { address, mobile, email } = router.query
+    let address = null
+    let mobile = null
+    let email = null
+
+    if (process.browser) {
+        address = router.query.address
+        mobile = router.query.mobile
+        email = router.query.email
+    }
 
     return (
         <Layout title="Resume" printTitle="Alessandro Bellini" color="#1780CC">
