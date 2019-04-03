@@ -1,4 +1,3 @@
-import { withRouter } from 'next/router'
 import Layout from '../templates/main'
 import Section from '../components/section'
 import Row from '../components/grid/row'
@@ -7,8 +6,8 @@ import Panel from '../components/panel'
 import Tags from '../components/tags'
 import { getQuery } from '../libs/location'
 
-export default withRouter(({ router }) => {
-    const { address, mobile, email } = router.query
+export default () => {
+    const { address, mobile, email } = getQuery()
 
     return (
         <Layout title="Resume" printTitle="Alessandro Bellini" color="#1780CC">
@@ -149,4 +148,4 @@ export default withRouter(({ router }) => {
             </Section>
         </Layout>
     )
-})
+}
