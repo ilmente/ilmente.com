@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { withRouter } from 'next/router'
 import AccentContext from '../../libs/accent-context'
-import '../../libs/router'
 
 export default (Template) => withRouter((props) => {
     const { title, color, router } = props;
