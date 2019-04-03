@@ -63,10 +63,7 @@ export default withRouter(({ menuId, router }) => {
         query: { color }
     })
 
-    const isCurrent = (href) => {
-        console.log(href, router)
-        return router.pathname === href
-    }
+    const isCurrent = (href) => router.pathname === href
 
     return (
         <nav>
