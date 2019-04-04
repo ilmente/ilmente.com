@@ -122,7 +122,7 @@ export default withLocation(({ location }) => {
                         <Panel>
                             <h2>Experience</h2>
                             <h4 className="no-margin-y">Application Architect</h4>
-                            <h5 className="no-margin-y">2016-2019, Spryker @ Berlin, DE</h5>
+                            <h5 className="no-margin-y">2015-2019, Spryker @ Berlin, DE</h5>
                             <p className="no-margin-top">
                                 Started as developer in the core team,
                                 I <em>grew up</em> architect in 2018,
@@ -133,7 +133,7 @@ export default withLocation(({ location }) => {
                             </p>
 
                             <h4 className="no-margin-bottom">Frontend Developer</h4>
-                            <h5 className="no-margin-y">2014-2016, Lutech Mobile @ Milano, IT</h5>
+                            <h5 className="no-margin-y">2013-2015, Lutech Mobile @ Milano, IT</h5>
                             <p className="no-margin-top">
                                 In this mobile oriented agency,
                                 I was lead developer of a small team, mainly focused
@@ -142,7 +142,7 @@ export default withLocation(({ location }) => {
                             </p>
 
                             <h4 className="no-margin-bottom">Fullstack Developer</h4>
-                            <h5 className="no-margin-y">2011-2013, Extra.it @ Milano, IT</h5>
+                            <h5 className="no-margin-y">2011-2012, Extra.it @ Milano, IT</h5>
                             <p className="no-margin-top">
                                 Started as backend developer,
                                 I soon switched and focused mainly on frontend.
@@ -151,7 +151,7 @@ export default withLocation(({ location }) => {
                             </p>
 
                             <h4 className="no-margin-bottom">And...</h4>
-                            <h5 className="no-margin-y">2006-2010 @ Pistoia, IT</h5>
+                            <h5 className="no-margin-y">2006-2015 @ Pistoia, IT</h5>
                             <p className="no-margin-top">
                                 Web developer freelance, graphic designer in a printing factory,
                                 "computer" teacher in a private primary school and tutor in
