@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css'
-import { animate } from '../styles/screen'
+import { animate } from '../styles/animations'
 
 const style = css`
     .hamburger {

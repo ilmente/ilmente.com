@@ -3,7 +3,7 @@ import css from 'styled-jsx/css'
 import Menu from '../components/menu'
 import Hamburger from '../components/hamburger'
 import theme from '../theme'
-import { animate } from '../styles/screen'
+import { animate } from '../styles/animations'
 
 const style = css`
     div {

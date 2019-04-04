@@ -7,8 +7,10 @@ import Menu from '../components/menu'
 import Drawer from '../components/drawer'
 import Icon from '../components/icon'
 import IconCommonSprite from '../components/sprites/icon-common'
-import ScreenStyle from '../styles/screen'
-import PrintStyle from '../styles/print'
+import AnimationsStyle from '../styles/animations'
+import TypographyStyle from '../styles/typography'
+import GridStyle from '../styles/grid'
+import UtilsStyle from '../styles/utils'
 
 export default withLayout(({ title, printTitle, children }) => (
     <>
@@ -35,8 +37,10 @@ export default withLayout(({ title, printTitle, children }) => (
                 </a> | ilmente.com
             </Footer>
         </Drawer>
-        <ScreenStyle />
-        <PrintStyle />
+        <AnimationsStyle />
+        <TypographyStyle />
+        <GridStyle />
+        <UtilsStyle />
         <IconCommonSprite />
     </>
 ))

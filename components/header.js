@@ -1,7 +1,7 @@
 import css from 'styled-jsx/css'
 import Section from '../components/section'
 import theme from '../theme'
-import { animate } from '../styles/screen'
+import { animate } from '../styles/animations'
 
 const style = css`
     header {

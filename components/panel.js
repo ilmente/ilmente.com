@@ -1,6 +1,6 @@
 import css from 'styled-jsx/css'
 import theme from '../theme'
-import { animate } from '../styles/screen'
+import { animate } from '../styles/animations'
 
 const style = css`
     div {

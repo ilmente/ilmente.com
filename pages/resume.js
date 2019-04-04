@@ -64,21 +64,23 @@ export default withLocation(({ location }) => {
                         <Panel>
                             <h2>Profile</h2>
                             <p>
-                                I could start by saying something like: <em>"Commited
+                                I could start by writing something like: <em>"Commited
                                 application architect with almost 14 years of coding experience,
                                 7 of which focused on frontend development..."</em>. Well, I just did.
-                                But I'll skip the rest of my self-promotion intro as it is boring.
+                                But I'll skip the rest of my pro self-promotion intro as it's boring.
                             </p>
                             <p>
-                                Let's focus on who I really am: a frontend lover, a nerd. I enjoy coding:
+                                Let's focus on who I really am: a frontend lover, a nerd. I do enjoy coding:
                                 the harder is the challenge, the more exiting is the persue
-                                of the solution. And I strive to learn; I often do it on my own, but peers, colleagues
+                                of the solution. And I strive to learn: I constantly do it by messing
+                                with code on my own; but peers, colleagues
                                 and customers sometimes are the best teachers. This is why the social aspect of
-                                my work is so valuable to me: it gets the same effort as the coding one.
+                                my work is tremendously valuable to me, and it gets the same effort as the coding one.
                             </p>
                         </Panel>
                     </Col>
                 </Row>
+
                 <Row>
                     <Col wide="4" print="4">
                         <h2>Feelings</h2>
@@ -86,19 +88,19 @@ export default withLocation(({ location }) => {
                             <strong>In a strong and romantic relationship with</strong> HTML,
                             CSS (BEM, Sass, Less), Javascript (ES5.1, 6, 7 and counting),
                             Typescript, WebComponents, Twig, Git.
-                    </p>
+                        </p>
                         <p>
                             <strong>Having an affaire with</strong> React,
                             Redux, Mobx, CssNext, CssModules, styled-jsx, Next.js, GatsbyJS,
                             Jest, Ava, Node.
-                    </p>
+                        </p>
                         <p>
                             <strong>Had a couple of dates with</strong> PWA, Mobx State Tree,
                             RxJS, Emotion, GraphQL, Php.
-                    </p>
+                        </p>
                         <p>
                             <strong>Just met</strong> Vue, Functional Programming.
-                    </p>
+                        </p>
 
                         <h3>I am a&#8230;</h3>
                         <ul className="bullet">
@@ -136,7 +138,7 @@ export default withLocation(({ location }) => {
                                 <Tags names={['jquerydays', 'rafdays', 'angularone', 'cordova', 'ibm', 'worklight', 'ios', 'android', 'evenwindowsmobile']} />
                             </p>
 
-                            <h4 className="no-margin-bottom">Web Developer</h4>
+                            <h4 className="no-margin-bottom">Fullstack Developer</h4>
                             <h5 className="no-margin-y">2011-2013, Extra.it @ Milano, IT</h5>
                             <p className="no-margin-top">
                                 Started as backend developer,
@@ -173,11 +175,11 @@ export default withLocation(({ location }) => {
                             <h4 className="no-margin-y">Bachelor in Sociology</h4>
                             <p className="no-margin-top">
                                 <em>Università degli Studi di Firenze</em>, 2010.
-                        </p>
+                            </p>
                             <h3>Languages</h3>
                             <p>
                                 Fluent Italian; good English.
-                        </p>
+                            </p>
                         </Panel>
                     </Col>
                 </Row>
