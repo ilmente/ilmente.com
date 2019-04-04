@@ -3,11 +3,11 @@ import css from 'styled-jsx/css'
 const style = css`
     small {
         display: block;
-        padding-top: 0.1rem;
+        margin-top: 0.15rem;
     }
 `
 
-const getTags = (names) => names.map(name => `<em>#${name}</em>`).join(', ')
+const getTags = (names) => names.map(name => `#${name}`).join(', ')
 
 export default ({ names }) => (
     <>

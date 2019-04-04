@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+import { withRouter } from 'next/router'
 import Layout from '../templates/main'
 import Section from '../components/section'
 import Row from '../components/grid/row'
@@ -5,9 +7,20 @@ import Col from '../components/grid/col'
 import Panel from '../components/panel'
 import Tags from '../components/tags'
 import { getQuery } from '../libs/location'
+import Icon from '../components/icon'
+import IconResume from '../components/sprites/icon-resume'
 
-export default () => {
-    const { address, mobile, email } = getQuery()
+export default withRouter(({ router }) => {
+    const [address, setAddress] = useState()
+    const [mobile, setMobile] = useState()
+    const [email, setEmail] = useState()
+
+    useEffect(() => {
+        // const query = getQuery()
+        if (process.browser && router.query.address) setAddress(router.query.address)
+        if (process.browser && router.query.mobile) setMobile(router.query.mobile)
+        if (process.browser && router.query.email) setEmail(router.query.email)
+    })
 
     return (
         <Layout title="Resume" printTitle="Alessandro Bellini" color="#1780CC">
@@ -15,13 +28,37 @@ export default () => {
                 <Row>
                     <Col wide="4" print="4">
                         <h2>Contacts</h2>
-                        <ul className="bullet">
-                            {process.browser && address && (<li>{address}</li>)}
-                            {process.browser && mobile && (<li>{mobile}</li>)}
-                            <li><a href="https://ilmente.com" taregt="_blank">ilmente.com</a></li>
-                            {process.browser && email && (<li><a href={`mailto:${email}`} taregt="_blank">{email}</a></li>)}
-                            <li><a href="https://www.linkedin.com/in/ilmente" target="_blank">linkedin.com/in/ilmente</a></li>
-                            <li><a href="https://github.com/ilmente" target="_blank">github.com/ilmente</a></li>
+                        <ul>
+                            {address && (
+                                <li>
+                                    <Icon name="marker" />
+                                    <span className="margin-left">{address}</span>
+                                </li>
+                            )}
+                            {mobile && (
+                                <li>
+                                    <Icon name="mobile" />
+                                    <span className="margin-left">{mobile}</span>
+                                </li>
+                            )}
+                            <li>
+                                <Icon name="globe" />
+                                <a className="margin-left" href="https://ilmente.com" taregt="_blank">ilmente.com</a>
+                            </li>
+                            {email && (
+                                <li>
+                                    <Icon name="paper-plane" />
+                                    <a className="margin-left" href={`mailto:${email}`} taregt="_blank">{email}</a>
+                                </li>
+                            )}
+                            <li>
+                                <Icon name="linkedin" />
+                                <a className="margin-left" href="https://www.linkedin.com/in/ilmente" target="_blank">linkedin.com/in/ilmente</a>
+                            </li>
+                            <li>
+                                <Icon name="github" />
+                                <a className="margin-left" href="https://github.com/ilmente" target="_blank">github.com/ilmente</a>
+                            </li>
                         </ul>
                     </Col>
                     <Col wide="8" print="8">
@@ -77,7 +114,7 @@ export default () => {
                         <Panel>
                             <h2>Experience</h2>
                             <h4 className="no-margin-y">Frontend Architect</h4>
-                            <h5 className="alt no-margin-y">2016-2019, Spryker @ Berlin, DE</h5>
+                            <h5 className="no-margin-top">2016-2019, Spryker @ Berlin, DE</h5>
 
                             <p className="no-margin-top">
                                 Started as developer in the core team,
@@ -89,7 +126,7 @@ export default () => {
                             </p>
 
                             <h4 className="no-margin-y">Frontend Developer</h4>
-                            <h5 className="alt no-margin-y">2014-2016, Lutech Mobile @ Milano, IT</h5>
+                            <h5 className="no-margin-top">2014-2016, Lutech Mobile @ Milano, IT</h5>
 
                             <p className="no-margin-top">
                                 In this mobile oriented agency,
@@ -99,7 +136,7 @@ export default () => {
                             </p>
 
                             <h4 className="no-margin-y">Web Developer</h4>
-                            <h5 className="alt no-margin-y">2011-2013, Extra.it @ Milano, IT</h5>
+                            <h5 className="no-margin-top">2011-2013, Extra.it @ Milano, IT</h5>
 
                             <p className="no-margin-top">
                                 Started as backend developer,
@@ -109,7 +146,7 @@ export default () => {
                             </p>
 
                             <h4 className="no-margin-y">And...</h4>
-                            <h5 className="alt no-margin-y">2006-2010 @ Pistoia, IT</h5>
+                            <h5 className="no-margin-top">2006-2010 @ Pistoia, IT</h5>
 
                             <p className="no-margin-top">
                                 Web developer freelance, graphic designer in a printing factory,
@@ -146,6 +183,7 @@ export default () => {
                     </Col>
                 </Row>
             </Section>
+            <IconResume />
         </Layout>
     )
-}
+})

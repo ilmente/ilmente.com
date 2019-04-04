@@ -14,7 +14,7 @@ export default {
         fontFamilyDefault: 'Inconsolata, monospace',
         fontFamilyAlt: 'Pacifico, serif',
         fontSize: 1,
-        fontSizeSmall: 0.9,
+        fontSizeSmall: 0.8,
         lineHeight: 1.4,
         color: '#333',
         colorAlt: '#a3a3a3',
