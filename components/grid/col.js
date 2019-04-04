@@ -11,8 +11,8 @@ const getColClassNames = (props) => breakpoints
     .map(breakpoint => `col-${breakpoint}-${props[breakpoint]}`)
     .join(' ')
 
-export default ({ children, ...props }) => (
-    <div className={`col ${getColClassNames(props)}`}>
+export default ({ children, className, ...props }) => (
+    <div className={`col ${getColClassNames(props)} ${className}`}>
         {children}
     </div>
 )

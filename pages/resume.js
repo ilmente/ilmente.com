@@ -24,6 +24,9 @@ export default withLocation(({ location }) => {
     return (
         <Layout title="Resume" printTitle="Alessandro Bellini" color="#1780CC">
             <Section>
+                <p className="only-screen">
+                    This is my official <em>curriculum vitae</em>: it's printable and completely made with react.
+                </p>
                 <Row>
                     <Col wide="4" print="4">
                         <h2>Contacts</h2>

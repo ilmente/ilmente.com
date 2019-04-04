@@ -3,6 +3,10 @@ import theme from '../theme'
 
 const style = css.global`
     .text-alt { color: ${theme.layout.colorAlt}; }
+    .text-center { text-align: center; }
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+    .text-justify { text-align: justify; }
 
     .margin { margin: 1rem; }
     .margin-x { margin-left: 1rem; margin-right: 1rem; }

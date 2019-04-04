@@ -14,8 +14,8 @@ const getClassNames = (props) => modifiers
     .filter(modifier => !!props[modifier])
     .join(' ')
 
-export default ({ children, ...props }) => (
-    <div className={`row ${getClassNames(props)}`}>
+export default ({ children, className, ...props }) => (
+    <div className={`row ${getClassNames(props)} ${className}`}>
         {children}
     </div>
 )
