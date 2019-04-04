@@ -67,18 +67,10 @@ export default withLocation(({ location }) => {
                         <Panel>
                             <h2>Profile</h2>
                             <p>
-                                I could start by writing something like: <em>"Commited
-                                application architect with almost 14 years of coding experience,
-                                7 of which focused on frontend development..."</em>. Well, I just did.
-                                But I'll skip the rest of my pro self-promotion intro as it's boring.
-                            </p>
-                            <p>
-                                Let's focus on who I really am: a frontend lover, a nerd. I do enjoy coding:
-                                the harder is the challenge, the more exiting is the persue
-                                of the solution. And I strive to learn: I constantly do it by messing
-                                with code on my own; but peers, colleagues
-                                and customers sometimes are the best teachers. This is why the social aspect of
-                                my work is tremendously valuable to me, and it gets the same effort as the coding one.
+                                I'm a frontend lover, a nerd. I do enjoy coding:
+                                the harder is the challenge, the more exiting is the persue of the solution.
+                                And I strive to learn, either by messing around with code or by discussing with peers and colleagues.
+                                Deliver good working code, to me, it's a kind of art that I try to master every day.
                             </p>
                         </Panel>
                     </Col>
