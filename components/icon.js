@@ -3,13 +3,13 @@ import css from 'styled-jsx/css'
 const style = css`
     svg {
         display: inline-block;
-        vertical-align: middle;
         user-select: none;
+        vertical-align: text-bottom;
     }
 `
 
-export default ({ name, color, size = 1 }) => (
-    <svg>
+export default ({ name, color, className, size = 1 }) => (
+    <svg className={className}>
         <use xlinkHref={`#:${name}`} />
         <style jsx>{style}</style>
         <style jsx>{`

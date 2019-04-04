@@ -9,6 +9,7 @@ const style = css.global`
         justify-content: flex-start;
         width: 100%;
         margin: -${theme.grid.gutter / 2}rem;
+        clear: both;
     }
 
     .top { align - items: flex - start; }

@@ -1,4 +1,4 @@
-import layout from './hoc/layout'
+import withLayout from './hoc/layout'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Section from '../components/section'
@@ -10,7 +10,7 @@ import IconCommonSprite from '../components/sprites/icon-common'
 import ScreenStyle from '../styles/screen'
 import PrintStyle from '../styles/print'
 
-const Main = ({ title, printTitle, children }) => (
+export default withLayout(({ title, printTitle, children }) => (
     <>
         <Drawer>
             <Header>
@@ -39,6 +39,4 @@ const Main = ({ title, printTitle, children }) => (
         <PrintStyle />
         <IconCommonSprite />
     </>
-)
-
-export default layout(Main)
+))

@@ -1,25 +1,24 @@
 import { useState, useEffect } from 'react'
-import { withRouter } from 'next/router'
 import Layout from '../templates/main'
 import Section from '../components/section'
 import Row from '../components/grid/row'
 import Col from '../components/grid/col'
 import Panel from '../components/panel'
 import Tags from '../components/tags'
-import { getQuery } from '../libs/location'
+import withLocation from '../components/hoc/location'
 import Icon from '../components/icon'
 import IconResume from '../components/sprites/icon-resume'
 
-export default withRouter(({ router }) => {
+export default withLocation(({ location }) => {
     const [address, setAddress] = useState()
     const [mobile, setMobile] = useState()
     const [email, setEmail] = useState()
 
     useEffect(() => {
-        // const query = getQuery()
-        if (process.browser && router.query.address) setAddress(router.query.address)
-        if (process.browser && router.query.mobile) setMobile(router.query.mobile)
-        if (process.browser && router.query.email) setEmail(router.query.email)
+        const query = location.getQuery()
+        if (process.browser && query.address) setAddress(query.address)
+        if (process.browser && query.mobile) setMobile(query.mobile)
+        if (process.browser && query.email) setEmail(query.email)
     })
 
     return (
@@ -47,7 +46,7 @@ export default withRouter(({ router }) => {
                             </li>
                             {email && (
                                 <li>
-                                    <Icon name="paper-plane" />
+                                    <Icon name="paper-plane"/>
                                     <a className="margin-left" href={`mailto:${email}`} taregt="_blank">{email}</a>
                                 </li>
                             )}
@@ -65,15 +64,18 @@ export default withRouter(({ router }) => {
                         <Panel>
                             <h2>Profile</h2>
                             <p>
-                                I'm a geek who
-                                does love "frontending" and air drumming while coding. I also like
-                                taking photographs here and there,
-                                cooking (and eating, probably even more),
-                                drinking way too much fine espresso coffee, singing out loud
-                                (even in my office, when alone),
-                                playing bass guitar, dancing like a fool, watching great animes,
-                                reading newspapers and distopic books, travelling, meeting people and discovering stuff.
-                        </p>
+                                I could start by saying something like: <em>"Commited
+                                application architect with almost 14 years of coding experience,
+                                7 of which focused on frontend development..."</em>. Well, I just did.
+                                But I'll skip the rest of my self-promotion intro as it is boring.
+                            </p>
+                            <p>
+                                Let's focus on who I really am: a frontend lover, a nerd. I enjoy coding:
+                                the harder is the challenge, the more exiting is the persue
+                                of the solution. And I strive to learn; I often do it on my own, but peers, colleagues
+                                and customers sometimes are the best teachers. This is why the social aspect of
+                                my work is so valuable to me: it gets the same effort as the coding one.
+                            </p>
                         </Panel>
                     </Col>
                 </Row>
@@ -102,57 +104,54 @@ export default withRouter(({ router }) => {
                         <ul className="bullet">
                             <li>competitor with myself</li>
                             <li>good mediator</li>
+                            <li>knowledge consumer</li>
                             <li>coffee maker</li>
                             <li>challenge accepter</li>
                             <li>user-group talker</li>
-                            <li>hard worker</li>
-                            <li>team worker</li>
+                            <li>hard worker (cliqué)</li>
+                            <li>team worker (cliqué)</li>
                             <li>service worker</li>
                         </ul>
                     </Col>
                     <Col wide="8" print="8">
                         <Panel>
                             <h2>Experience</h2>
-                            <h4 className="no-margin-y">Frontend Architect</h4>
-                            <h5 className="no-margin-top">2016-2019, Spryker @ Berlin, DE</h5>
-
+                            <h4 className="no-margin-y">Application Architect</h4>
+                            <h5 className="no-margin-y">2016-2019, Spryker @ Berlin, DE</h5>
                             <p className="no-margin-top">
                                 Started as developer in the core team,
-                            I <em>grew up</em> architect in 2018,
+                                I <em>grew up</em> architect in 2018,
                                 becoming resposable for SprykerOS products
                                 frontend architecture and providing tailored solutions
                                 for customers.
-                            <Tags names={['es6and7', 'typescript', 'webcomponents', 'reactdeepdive', 'webpack', 'jsthegoodpart', 'cleancode', 'backtostudy', 'backtobasics', 'fp']} />
+                                <Tags names={['es6and7', 'typescript', 'webcomponents', 'reactdeepdive', 'webpack', 'jsthegoodpart', 'cleancode', 'backtostudy', 'backtobasics', 'fp']} />
                             </p>
 
-                            <h4 className="no-margin-y">Frontend Developer</h4>
-                            <h5 className="no-margin-top">2014-2016, Lutech Mobile @ Milano, IT</h5>
-
+                            <h4 className="no-margin-bottom">Frontend Developer</h4>
+                            <h5 className="no-margin-y">2014-2016, Lutech Mobile @ Milano, IT</h5>
                             <p className="no-margin-top">
                                 In this mobile oriented agency,
                                 I was lead developer of a small team, mainly focused
                                 on cross-platform and/or hybrid applications development.
-                            <Tags names={['jquerydays', 'rafdays', 'angularone', 'cordova', 'ibm', 'worklight', 'ios', 'android', 'evenwindowsmobile']} />
+                                <Tags names={['jquerydays', 'rafdays', 'angularone', 'cordova', 'ibm', 'worklight', 'ios', 'android', 'evenwindowsmobile']} />
                             </p>
 
-                            <h4 className="no-margin-y">Web Developer</h4>
-                            <h5 className="no-margin-top">2011-2013, Extra.it @ Milano, IT</h5>
-
+                            <h4 className="no-margin-bottom">Web Developer</h4>
+                            <h5 className="no-margin-y">2011-2013, Extra.it @ Milano, IT</h5>
                             <p className="no-margin-top">
                                 Started as backend developer,
                                 I soon switched and focused mainly on frontend.
                                 My role in the agency was to implement UIs for customers' .net web applications.
-                            <Tags names={['jquerydays', 'backbone', 'dotnet', 'frontendloveatfirstcode']} />
+                                <Tags names={['jquerydays', 'backbone', 'dotnet', 'frontendloveatfirstcode']} />
                             </p>
 
-                            <h4 className="no-margin-y">And...</h4>
-                            <h5 className="no-margin-top">2006-2010 @ Pistoia, IT</h5>
-
+                            <h4 className="no-margin-bottom">And...</h4>
+                            <h5 className="no-margin-y">2006-2010 @ Pistoia, IT</h5>
                             <p className="no-margin-top">
                                 Web developer freelance, graphic designer in a printing factory,
                                 "computer" teacher in a private primary school and tutor in
                                 adult education programs (such as web development fundamentals and wordpress theming).
-                            <Tags names={['jquerydays', 'spaghettidays', 'adobesuite', 'iloveteaching', 'onewordpresstorulethemall', 'jackofalltrades']} />
+                                <Tags names={['jquerydays', 'spaghettidays', 'adobesuite', 'iloveteaching', 'onewordpresstorulethemall', 'jackofalltrades']} />
                             </p>
                         </Panel>
                     </Col>

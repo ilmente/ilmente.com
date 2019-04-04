@@ -12,6 +12,7 @@ const style = css.global`
         border: 0;
         box-sizing: border-box;
         font: inherit;
+        line-height: inherit;
         color: inherit;
 
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);

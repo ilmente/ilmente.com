@@ -9,13 +9,13 @@ const style = css.global`
 
     @media only print {
         * {
-            text-rendering: optimizeLegibility;
+            transition: none;
         }
 
         html {
             position: static;
             min-height: 100%;
-            font-size: 72%;
+            font-size: 70%;
             overflow: initial;
 
         }

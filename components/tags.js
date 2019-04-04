@@ -3,7 +3,7 @@ import css from 'styled-jsx/css'
 const style = css`
     small {
         display: block;
-        margin-top: 0.15rem;
+        padding-top: 0.15rem;
     }
 `
 
