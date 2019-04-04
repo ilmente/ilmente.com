@@ -151,7 +151,7 @@ export default withLocation(({ location }) => {
                             </p>
 
                             <h4 className="no-margin-bottom">And...</h4>
-                            <h5 className="no-margin-y">2006-2015 @ Pistoia, IT</h5>
+                            <h5 className="no-margin-y">2006-2010 @ Pistoia, IT</h5>
                             <p className="no-margin-top">
                                 Web developer freelance, graphic designer in a printing factory,
                                 "computer" teacher in a private primary school and tutor in
