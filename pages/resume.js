@@ -108,8 +108,8 @@ export default withLocation(({ location }) => {
                             <li>coffee maker</li>
                             <li>challenge accepter</li>
                             <li>user-group talker</li>
-                            <li>hard worker <small><em>(cliché)</em></small></li>
-                            <li>team worker <small><em>(cliché)</em></small></li>
+                            <li>hard worker <small className="text-alt">#cliché</small></li>
+                            <li>team worker <small className="text-alt">#cliché</small></li>
                             <li>service worker</li>
                         </ul>
                     </Col>
