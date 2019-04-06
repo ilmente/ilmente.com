@@ -28,7 +28,7 @@ export default withLocation(({ location }) => {
                     This is my official <em>curriculum vitae</em>: it's printable and completely made with react.
                 </p>
                 <Row>
-                    <Col wide="4" print="4">
+                    <Col default="12" wide="4" print="4">
                         <h2>Contacts</h2>
                         <ul>
                             {address && (
@@ -63,21 +63,24 @@ export default withLocation(({ location }) => {
                             </li>
                         </ul>
                     </Col>
-                    <Col wide="8" print="8">
-                        <Panel>
+                    <Col default="12" wide="8" print="8">
+                        <Panel onlyWide>
                             <h2>Profile</h2>
                             <p>
-                                I'm a frontend lover, a nerd. I do enjoy coding:
-                                the harder is the challenge, the more exiting is the persue of the solution.
-                                And I strive to learn, either by messing around with code or by discussing with peers and colleagues.
-                                Deliver good working code, to me, it's a kind of art that I try to master every day.
+                                I wrote this paragraph in a professional way several times,
+                                but it always sounded ridiculos.
+                                I'll try my way: I'm a frontend lover, a proper nerd. I do enjoy coding.
+                                In the recent years I focused mainly on frontend architecture design for vast
+                                modular software products. In a nutshell: deliver, speedup the development process, simplify the
+                                complexity whenever possible, define some good API, keep the code quality high as well as the performance,
+                                teach, train and learn from peers and colleagues, deliver again and wisely release.
                             </p>
                         </Panel>
                     </Col>
                 </Row>
 
                 <Row>
-                    <Col wide="4" print="4">
+                    <Col default="12" wide="4" print="4">
                         <h2>Feelings</h2>
                         <p>
                             <strong>In a strong and romantic relationship with</strong> HTML,
@@ -110,8 +113,8 @@ export default withLocation(({ location }) => {
                             <li>service worker</li>
                         </ul>
                     </Col>
-                    <Col wide="8" print="8">
-                        <Panel>
+                    <Col default="12" wide="8" print="8">
+                        <Panel onlyWide>
                             <h2>Experience</h2>
                             <h4 className="no-margin-y">Application Architect</h4>
                             <h5 className="no-margin-y">2015-2019, Spryker @ Berlin, DE</h5>
@@ -155,7 +158,7 @@ export default withLocation(({ location }) => {
                 </Row>
 
                 <Row>
-                    <Col wide="4" print="4">
+                    <Col default="12" wide="4" print="4">
                         <h2>Expertise</h2>
                         <ul className="bullet">
                             <li>frontend development</li>
@@ -164,8 +167,8 @@ export default withLocation(({ location }) => {
                             <li>italian food and wine</li>
                         </ul>
                     </Col>
-                    <Col wide="8" print="8">
-                        <Panel>
+                    <Col default="12" wide="8" print="8">
+                        <Panel onlyWide>
                             <h2>Education</h2>
                             <h4 className="no-margin-y">Bachelor in Sociology</h4>
                             <p className="no-margin-top">

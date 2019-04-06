@@ -1,6 +1,6 @@
 module.exports = {
     exportPathMap: async (defaultPathMap) => ({
-        '/': { page: '/' },
+        ...defaultPathMap,
         '/resume.html': { page: '/resume' }
     }),
 
