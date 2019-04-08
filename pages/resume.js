@@ -67,13 +67,18 @@ export default withLocation(({ location }) => {
                         <Panel onlyWide>
                             <h2>Profile</h2>
                             <p>
-                                I wrote this paragraph in a professional way several times,
-                                but it always sounded ridiculos.
-                                I'll try my way: I'm a frontend lover, a proper nerd. I do enjoy coding.
-                                In the recent years I focused mainly on frontend architecture design for vast
-                                modular software products. In a nutshell: deliver, speedup the development process, simplify the
-                                complexity whenever possible, define some good API, keep the code quality high as well as the performance,
-                                teach, train and learn from peers and colleagues, deliver again and wisely release.
+                                I'm a frontend lover and a proper nerd. I do enjoy coding.<br />
+                                In the recent years I focused mainly on frontend architecture design for vast and highly
+                                modular software products. In a nutshell: deliver; speedup the development process; simplify the
+                                complexity whenever possible; think twice about deps: it's modular in here!; define some good API
+                                and document them; what about ui living styleguide?; keep the code quality high as well as the performance;
+                                train sometimes and learn always from peers and colleagues; deliver again and wisely release.
+                            </p>
+                            <p className="only-screen">
+                                <small className="text-alt">
+                                    I should probably write my profile in a "more professional" way, but I always end up with some
+                                    ridiculos description of a super-human developer, and I'm not. So, I'm keeping it real.
+                                </small>
                             </p>
                         </Panel>
                     </Col>
