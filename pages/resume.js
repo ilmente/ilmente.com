@@ -129,7 +129,7 @@ export default withLocation(({ location }) => {
                                 becoming resposable for SprykerOS products
                                 frontend architecture and providing tailored solutions
                                 for customers.
-                                <Tags names={['es6and7', 'typescript', 'webcomponents', 'reactdeepdive', 'webpack', 'jsthegoodpart', 'cleancode', 'backtostudy', 'backtobasics', 'fp']} />
+                                <Tags names={['es6and7', 'typescript', 'webcomponents', 'reactdeepdive', 'webpack', 'jsthegoodpart', 'cleancode', 'backtostudy', 'backtobasics']} />
                             </p>
 
                             <h4 className="no-margin-bottom">Frontend Developer</h4>
