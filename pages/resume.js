@@ -126,7 +126,7 @@ export default withLocation(({ location }) => {
                             <p className="no-margin-top">
                                 Started as developer in the core team,
                                 I <em>grew up</em> architect in 2018,
-                                becoming resposable for SprykerOS products
+                                becoming responsible for SprykerOS products
                                 frontend architecture and providing tailored solutions
                                 for customers.
                                 <Tags names={['es6and7', 'typescript', 'webcomponents', 'reactdeepdive', 'webpack', 'jsthegoodpart', 'cleancode', 'backtostudy', 'backtobasics']} />
