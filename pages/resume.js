@@ -19,7 +19,7 @@ export default withLocation(({ location }) => {
         if (process.browser && query.address) setAddress(query.address)
         if (process.browser && query.mobile) setMobile(query.mobile)
         if (process.browser && query.email) setEmail(query.email)
-    })
+    }, [])
 
     return (
         <Layout title="Resume" printTitle="Alessandro Bellini" color="#1780CC">
@@ -88,9 +88,9 @@ export default withLocation(({ location }) => {
                     <Col default="12" wide="4" print="4">
                         <h2>Feelings</h2>
                         <p>
-                            <strong>In a strong and romantic relationship with</strong> HTML,
+                            <strong>In a strong and romantic relationship with</strong> HTML (and Twig),
                             CSS (BEM, Sass, Less), Javascript (ES5.1, 6, 7 and counting),
-                            Typescript, WebComponents, Twig, Git.
+                            Typescript, WebComponents, Git.
                         </p>
                         <p>
                             <strong>Having an affaire with</strong> React,
@@ -98,11 +98,11 @@ export default withLocation(({ location }) => {
                             Jest, Ava, Node.
                         </p>
                         <p>
-                            <strong>Had a couple of dates with</strong> PWA, Mobx State Tree,
+                            <strong>Had a couple of dates with</strong> Vue, Vuex, PWA, Mobx State Tree,
                             RxJS, Emotion, GraphQL, Php.
                         </p>
                         <p>
-                            <strong>Just met</strong> Vue, Functional Programming.
+                            <strong>Just met</strong> Functional Programming.
                         </p>
 
                         <h3>I am a&#8230;</h3>
@@ -178,7 +178,7 @@ export default withLocation(({ location }) => {
                         <ul className="bullet">
                             <li>frontend development</li>
                             <li>frontend architecture design</li>
-                            <li>agile team leading</li>
+                            <li>team leading</li>
                             <li>italian food and wine</li>
                         </ul>
                     </Col>
