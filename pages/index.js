@@ -15,7 +15,7 @@ export default () => (
                 drinking way too much fine espresso coffee, singing out loud
                 (even in my office, when alone),
                 playing bass guitar, dancing like a fool, watching great animes,
-                reading newspapers and distopic books, travelling, meeting people and discovering stuff.
+                reading newspapers and dystopian books, travelling, meeting people and discovering stuff.
             </p>
             <p>
                 I'm from Pistoia, a small town in Italy. I spend there quite some

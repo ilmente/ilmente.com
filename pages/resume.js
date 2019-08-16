@@ -121,6 +121,16 @@ export default withLocation(({ location }) => {
                     <Col default="12" wide="8" print="8">
                         <Panel onlyWide>
                             <h2>Experience</h2>
+
+                            <h4 className="no-margin-y">Frontend Architect</h4>
+                            <h5 className="no-margin-y">2019-*, Sourceability @ remotely, but mostly Berlin, DE</h5>
+                            <p className="no-margin-top">
+                                As architect, I'm responsible for the frontend design of 
+                                <a href="https://sourcengine.com" target="_blank">sourcengine.com</a> B2B portal.
+                                Plain and "simple".
+                                <Tags names={['es6and7', 'vuejs', 'sprykerbased']} />
+                            </p>
+
                             <h4 className="no-margin-y">Application Architect</h4>
                             <h5 className="no-margin-y">2015-2019, Spryker @ Berlin, DE</h5>
                             <p className="no-margin-top">
