@@ -90,15 +90,15 @@ export default withLocation(({ location }) => {
                         <p>
                             <strong>In a strong and romantic relationship with</strong> HTML (and Twig),
                             CSS (BEM, Sass, Less), Javascript (ES5.1, 6, 7 and counting),
-                            Typescript, WebComponents, Git.
+                            Typescript, Vue, Vuex, Git.
                         </p>
                         <p>
                             <strong>Having an affaire with</strong> React,
-                            Redux, Mobx, CssNext, CssModules, styled-jsx, Next.js, GatsbyJS,
-                            Jest, Ava, Node.
+                            Redux, Mobx, CssNext, CssModules, styled-jsx, Next.js, GatsbyJS, 11ty,
+                            Jest, Cypress, Ava.
                         </p>
                         <p>
-                            <strong>Had a couple of dates with</strong> Vue, Vuex, PWA, Mobx State Tree,
+                            <strong>Had a couple of dates with</strong> PWA, Mobx State Tree,
                             RxJS, Emotion, GraphQL, Php.
                         </p>
                         <p>
@@ -125,9 +125,9 @@ export default withLocation(({ location }) => {
                             <h4 className="no-margin-y">Frontend Architect</h4>
                             <h5 className="no-margin-y">2019-*, Sourceability @ remotely, but mostly Berlin, DE</h5>
                             <p className="no-margin-top">
-                                As architect, I'm responsible for the frontend design
-                                of <a href="https://sourcengine.com" target="_blank">sourcengine.com</a> B2B portal.
-                                Plain and "simple".
+                                As architect, I'm responsible for the frontend software design
+                                of <a href="https://sourcengine.com" target="_blank">sourcengine.com</a> B2B portal
+                                and other internal projects. Plain and "simple". 
                                 <Tags names={['es6and7', 'vuejs', 'sprykerbased']} />
                             </p>
 
