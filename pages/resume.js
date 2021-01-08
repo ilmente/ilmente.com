@@ -90,7 +90,7 @@ export default withLocation(({ location }) => {
                         <p>
                             <strong>In a strong and romantic relationship with</strong> HTML (and Twig),
                             CSS (BEM, Sass, Less), Javascript (ES5.1, 6, 7 and counting),
-                            Typescript, Vue, Vuex, Git.
+                            Typescript, Vue, Vuex, Webpack, Git.
                         </p>
                         <p>
                             <strong>Having an affaire with</strong> React,
