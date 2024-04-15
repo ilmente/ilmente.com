@@ -1,82 +1,85 @@
-import { useContext } from 'react'
-import { withRouter } from 'next/router'
-import NextLink from 'next/link'
-import css from 'styled-jsx/css'
-import theme from '../theme'
-import AccentContext from '../libs/accent-context'
+import { useContext } from 'react';
+import { withRouter } from 'next/router';
+import NextLink from 'next/link';
+import css from 'styled-jsx/css';
+import theme from '../theme';
+import AccentContext from '../libs/accent-context';
 
 const style = css`
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+    margin-right: 1rem;
+    padding: 0;
+  }
+
+  li::before {
+    content: none;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  .is-current {
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: ${theme.breakpoints.wide}rem) {
     ul {
-        padding-left: 0;
+      padding-top: 0.5rem;
+      text-align: right;
     }
 
     li {
-        display: inline-block;
-        margin: 0;
-        margin-right: 1rem;
-        padding: 0;
+      display: block;
+      margin: 0;
+      padding: 0.5rem 1rem;
     }
 
-    li::before {
-        content: none;
+    a {
+      color: ${theme.layout.bgColor};
+      animation: none;
     }
+  }
 
-    li:last-child {
-        margin-right: 0;
+  @media only print {
+    nav {
+      display: none;
     }
-
-    .is-current {
-        font-weight: bold;
-    }
-
-    @media only screen and (max-width: ${theme.breakpoints.wide}rem) {
-        ul {
-            padding-top: 0.5rem;
-            text-align: right;
-        }
-
-        li {
-            display: block;
-            margin: 0;
-            padding: 0.5rem 1rem;
-        }
-
-        a {
-            color: ${theme.layout.bgColor};
-            animation: none;
-        }
-    }
-
-    @media only print {
-        nav {
-            display: none;
-        }
-    }
-`
+  }
+`;
 
 export default withRouter(({ menuId, router }) => {
-    const { color } = useContext(AccentContext)
-    const menu = process.env.menus[menuId];
+  const { color } = useContext(AccentContext);
+  const menu = process.env.menus[menuId];
 
-    const to = (href) => ({
-        pathname: href,
-        query: { color }
-    })
+  const to = (href) => ({
+    pathname: href,
+    query: { color },
+  });
 
-    const isCurrent = (href) => router.pathname === href
+  const isCurrent = (href) => router.pathname === href;
 
-    return (
-        <nav>
-            <ul>
-                {menu.map(link => (
-                    <li className={`${isCurrent(link.href) && 'is-current'}`} key={link.href}>
-                        <NextLink href={to(link.href)} as={link.href}>
-                            <a>{link.label}</a>
-                        </NextLink>
-                    </li>
-                ))}
-            </ul>
-            <style jsx>{style}</style>
-        </nav>
-    )
-})
+  return (
+    <nav>
+      <ul>
+        {menu.map((link) => (
+          <li
+            className={`${isCurrent(link.href) && 'is-current'}`}
+            key={link.href}
+          >
+            <NextLink href={to(link.href)} as={link.href}>
+              <a>{link.label}</a>
+            </NextLink>
+          </li>
+        ))}
+      </ul>
+      <style jsx>{style}</style>
+    </nav>
+  );
+});
