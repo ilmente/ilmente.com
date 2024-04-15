@@ -10,8 +10,7 @@
     "dev": "next -p 3456",
     "build": "next build",
     "start": "next start",
-    "serve": "next build && next start",
-    "deploy": "next build && cp _redirects public/_redirects"
+    "serve": "next build && next start"
   },
   "dependencies": {
     "next": "^9.0.3",

@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "https://ilmente.it/*"
+  to = "https://ilmente.com/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://ilmente.netlify.com/*"
+  to = "https://ilmente.com/:splat"
+  status = 301
