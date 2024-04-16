@@ -29,7 +29,7 @@ export default withLocation(({ location }) => {
           completely made with react.
         </p>
         <Row>
-          <Col default="12" wide="4" print="4">
+          <Col default="12" wide="4" print="3">
             <h2>Contacts</h2>
             <ul>
               {address && (
@@ -88,26 +88,25 @@ export default withLocation(({ location }) => {
               </li>
             </ul>
           </Col>
-          <Col default="12" wide="8" print="8">
+          <Col default="12" wide="8" print="9">
             <Panel onlyWide>
               <h2>Profile</h2>
               <p>
-                I'm a frontend lover and a proper nerd. I do enjoy coding.
+                I'm a frontend enthusiast and a proper nerd. I do enjoy coding.
                 <br />
-                In the recent years I focused mainly on frontend architecture
-                design for vast and highly modular software products. In a
-                nutshell: deliver; speedup the development process; simplify the
-                complexity whenever possible; think twice about deps: it's
-                modular in here!; define some good API and document them; what
-                about ui living styleguide?; keep the code quality high as well
-                as the performance; train sometimes and learn always from peers
-                and colleagues; deliver again and wisely release.
+                In recent years I focused mainly on frontend architecture
+                design for ecommerce platforms. I love data flow and state managements,
+                when thoroughly thought; functional and smooth UIs; solid testing,
+                especialy when made easy to maintain.
+                <br />
+                When leading, I do invest time in building cohesive teams where
+                everyone - me included - should have the time and opportunity to grow (*) as professional.
               </p>
-              <p className="only-screen">
+              <p>
                 <small className="text-alt">
-                  I should probably write my profile in a "more professional"
-                  way, but I always end up with some ridiculos description of a
-                  super-human developer, and I'm not. So, I'm keeping it real.
+                  * Sourceability supported me in creating a program where the team
+                  read and presented one book a month, during dedicated working hours.
+                  Getting paid to learn: how cool is that?
                 </small>
               </p>
             </Panel>
@@ -115,23 +114,19 @@ export default withLocation(({ location }) => {
         </Row>
 
         <Row>
-          <Col default="12" wide="4" print="4">
+          <Col default="12" wide="4" print="3">
             <h2>Feelings</h2>
             <p>
               <strong>In a strong and romantic relationship with</strong> HTML
               (and Twig), CSS (BEM, Sass, Less), Javascript (ES5.1, 6, 7 and
-              counting), Typescript, Vue, Vuex, Pinia, Webpack, Vite, Cypress,
+              counting), Typescript, React, Vue, Webpack, Vite, Cypress,
               Jest, Git.
             </p>
             <p>
-              <strong>Having an affaire with</strong> Svelte, React, NextJs.
+              <strong>Having an affaire with</strong> PWA, Svelte, NextJs, Functional Programming.
             </p>
             <p>
-              <strong>Had a couple of dates with</strong> PWA, RxJS, GraphQL,
-              Php.
-            </p>
-            <p>
-              <strong>Just met</strong> Functional Programming.
+              <strong>Had a couple of dates with</strong> RxJS, GraphQL, Php.
             </p>
 
             <h3>I am a&#8230;</h3>
@@ -141,7 +136,7 @@ export default withLocation(({ location }) => {
               <li>knowledge consumer</li>
               <li>coffee maker</li>
               <li>challenge accepter</li>
-              <li>user-group talker</li>
+              <li>uncoordinated dancer</li>
               <li>
                 hard worker <small className="text-alt">#cliché</small>
               </li>
@@ -151,31 +146,63 @@ export default withLocation(({ location }) => {
               <li>service worker</li>
             </ul>
           </Col>
-          <Col default="12" wide="8" print="8">
+          <Col default="12" wide="8" print="9">
             <Panel onlyWide>
               <h2>Experience</h2>
 
-              <h4 className="no-margin-y">Frontend Architect and Team Lead</h4>
+              <h4 className="no-margin-y">Co-Founder, Chief Clock Architect</h4>
               <h5 className="no-margin-y">
-                2019-2023, Sourceability @ remotely, but mostly Berlin, DE
+                2022-*, hTime.io @ remotely, mostly Berlin, DE
               </h5>
               <p className="no-margin-top">
-                As architect, I was responsible for the frontend architectural
-                design of{' '}
+                As Chief Clock Architect (read "developer") my main goal is to design, implement and
+                maintain the code behind{' '}
+                <a href="https://hTime.io" target="_blank">
+                  hTime.io
+                </a>
+                .
+                <Tags
+                  names={[
+                    'sidehustle',
+                    'everybodyisacofindertoday',
+                    'typescript',
+                    'react',
+                    'nextjs',
+                  ]}
+                />
+              </p>
+
+              <h4 className="no-margin-y">Frontend Architect</h4>
+              <h5 className="no-margin-y">
+                2019-2023, Sourceability @ remotely, mostly Berlin, DE
+              </h5>
+              <p className="no-margin-top">
+                My main responsibility was to (re)design the frontend architecture and maintain{' '}
                 <a href="https://sourcengine.com" target="_blank">
                   sourcengine.com
                 </a>{' '}
-                B2B portal and other internal projects. I worked alongside my
-                small dream-team: 3 enthusiastic and skilled frontend engineers and 1 amazing
-                UI designer.
-                <Tags names={['dream-team', 'vue', 'pinia', 'cypress', 'php']} />
+                B2B ecommerce platform and other internal projects.
+                Particularly interesting was co-designing the BDD inspired,
+                E2E testing suite using Cypress and Cucumber.
+                To achieve that, I could count on a small amazing team of engineers and designers.
+                <Tags
+                  names={[
+                    'dream-team',
+                    'typescript',
+                    'vue',
+                    'pinia',
+                    'cypress',
+                    'cucumber',
+                    'bdd',
+                  ]}
+                />
               </p>
 
-              <h4 className="no-margin-bottom">Application Architect</h4>
+              <h4 className="no-margin-bottom">Frontend Architect</h4>
               <h5 className="no-margin-y">2015-2019, Spryker @ Berlin, DE</h5>
               <p className="no-margin-top">
                 Started as developer in the core team, I <em>grew up</em>{' '}
-                architect in 2018, becoming responsible for SprykerOS products
+                architect in 2018, becoming responsible for SprykerOS vast and highly modular
                 frontend architecture and providing tailored solutions for
                 customers.
                 <Tags
@@ -254,7 +281,7 @@ export default withLocation(({ location }) => {
         </Row>
 
         <Row>
-          <Col default="12" wide="4" print="4">
+          <Col default="12" wide="4" print="3">
             <h2>Expertise</h2>
             <ul className="bullet">
               <li>frontend development</li>
@@ -263,7 +290,7 @@ export default withLocation(({ location }) => {
               <li>italian food and wine</li>
             </ul>
           </Col>
-          <Col default="12" wide="8" print="8">
+          <Col default="12" wide="8" print="9">
             <Panel onlyWide>
               <h2>Education</h2>
               <h4 className="no-margin-y">Bachelor in Sociology</h4>
