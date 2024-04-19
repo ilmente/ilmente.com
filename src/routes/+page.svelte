@@ -5,7 +5,7 @@
 <Layout>
 	<svelte:fragment slot="title">ilmente.com</svelte:fragment>
 	<p>
-		My name is <strong>Alessandro Bellini</strong>. Welcome!
+		My name is <strong>Alessandro Bellini</strong>. Welcome! 👋
 		<br />
 		I'm a geek who does love "frontending" and air drumming while coding. I also like taking photographs
 		here and there, cooking (and eating, probably even more), drinking way too much fine espresso coffee,

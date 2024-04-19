@@ -75,7 +75,7 @@
 			</ul>
 		</section>
 		<section>
-			<h2>Experience 💻</h2>
+			<h2>Experience 🚀</h2>
 			<h4>Co-Founder, Chief Clock Architect</h4>
 			<h5>2022-*, hTime.io @ remotely, mostly Berlin, DE</h5>
 			<p>
@@ -149,7 +149,7 @@
 
 	<div data-grid>
 		<section>
-			<h2>Expertise 🚀</h2>
+			<h2>Expertise 👨‍🍳</h2>
 			<ul>
 				<li>frontend development</li>
 				<li>frontend architecture design</li>
