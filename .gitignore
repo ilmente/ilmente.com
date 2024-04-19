@@ -29,5 +29,5 @@ GTAGS
 node_modules
 out
 public
-.next
 .vscode
+.svelte-kit

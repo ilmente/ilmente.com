@@ -1,20 +1,31 @@
 {
-  "name": "ilmente.com",
-  "version": "2.0.0",
-  "description": "ilmente.com",
-  "main": "index.js",
-  "repository": "https://github.com/ilmente/ilmente.com.git",
-  "author": "Alessandro Bellini <alessandro@ilmente.it>",
-  "license": "MIT",
-  "scripts": {
-    "dev": "next -p 3456",
-    "build": "next build",
-    "start": "next start",
-    "serve": "next build && next start"
-  },
-  "dependencies": {
-    "next": "^9.0.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
-  }
+	"private": true,
+	"name": "ilmente.com",
+	"version": "2.0.0",
+	"description": "ilmente.com",
+	"main": "index.js",
+	"repository": "https://github.com/ilmente/ilmente.com.git",
+	"author": "Alessandro Bellini <alessandro@ilmente.it>",
+	"license": "MIT",
+	"type": "module",
+	"packageManager": "yarn@4.1.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@fontsource-variable/material-symbols-rounded": "^5.0.28"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"svelte": "^5.0.0-next.1",
+		"vite": "^5.0.3"
+	}
 }
