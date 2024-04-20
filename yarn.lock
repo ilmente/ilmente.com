@@ -176,13 +176,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource-variable/material-symbols-rounded@npm:^5.0.28":
-  version: 5.0.28
-  resolution: "@fontsource-variable/material-symbols-rounded@npm:5.0.28"
-  checksum: 10/a40432d07d2121e381bae821a06affa522bcb25dabf3c5d08dfef57386ebdec57846a9e80b72e9342f404ca4d4c6a132fa2d01efa886f233c0e4c3fae9773677
-  languageName: node
-  linkType: hard
-
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -949,7 +942,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ilmente.com@workspace:."
   dependencies:
-    "@fontsource-variable/material-symbols-rounded": "npm:^5.0.28"
     "@sveltejs/adapter-auto": "npm:^3.0.0"
     "@sveltejs/kit": "npm:^2.0.0"
     "@sveltejs/vite-plugin-svelte": "npm:^3.0.0"

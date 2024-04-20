@@ -1,40 +1,19 @@
-[data-grid] {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 1rem;
-	margin: 2rem 0;
-}
-
 @media only screen {
-	[data-print-only] {
-		display: none;
-	}
-
-	[data-wrapper] {
-		max-width: 60rem;
-		padding: 3rem;
-		margin: auto;
-	}
+  [data-print-only] {
+    display: none;
+  }
 }
 
 @media only print {
-	:root {
-		font-size: 11px;
-	}
+  :root {
+    font-size: 10px;
+  }
 
-	h1 {
-		font-size: 4rem;
-	}
+  h1 {
+    font-size: 4.5rem;
+  }
 
-	[data-screen-only] {
-		display: none;
-	}
-
-	[data-wrapper] {
-		padding: 3rem 3rem 0 3rem;
-	}
-
-	[data-grid] {
-		grid-template-columns: 1fr 3fr;
-	}
+  [data-screen-only] {
+    display: none;
+  }
 }

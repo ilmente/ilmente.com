@@ -1,5 +1,9 @@
 <script>
+	import { page } from '$app/stores';
 	import Layout from '$lib/components/Layout.svelte';
+
+	let phone = $page.url.searchParams.get('phone');
+	let email = $page.url.searchParams.get('email');
 </script>
 
 <Layout class="resume">
@@ -12,14 +16,17 @@
 		some paper and just create a pdf.
 	</p>
 
-	<div data-grid>
+	<div class="resume__grid">
 		<section>
 			<ul>
-				<li><a href="https://ilmente.com" taregt="_blank">ilmente.com</a></li>
+				<li>📍 Berlin, or remotly</li>
+				{#if phone}<li>📱 <a href="callto:{phone}">{phone}</a></li>{/if}
+				{#if email}<li>📫 <a href="mailto:{email}">{email}</a></li>{/if}
+				<li><a href="https://ilmente.com" taregt="_blank">🌍 ilmente.com</a></li>
 				<li>
-					<a href="https://www.linkedin.com/in/ilmente" target="_blank">linkedin.com/in/ilmente</a>
+					<a href="https://www.linkedin.com/in/ilmente" target="_blank">😎 linkedin.com/in/ilmente</a>
 				</li>
-				<li><a href="https://github.com/ilmente" target="_blank">github.com/ilmente</a></li>
+				<li><a href="https://github.com/ilmente" target="_blank">🤓 github.com/ilmente</a></li>
 			</ul>
 		</section>
 		<section>
@@ -42,9 +49,9 @@
 		</section>
 	</div>
 
-	<div data-grid>
+	<div class="resume__grid">
 		<section>
-			<h2>Feelings 💙</h2>
+			<h2>Feelings 💚</h2>
 			<p>
 				<strong>In a strong and romantic relationship with</strong> HTML (and Twig), CSS (BEM, Sass,
 				Less), Javascript (ES5.1, 6, 7 and counting), Typescript, React, Vue, Webpack, Vite, Cypress,
@@ -57,7 +64,7 @@
 				<strong>Had a couple of dates with</strong> RxJS, GraphQL, Php.
 			</p>
 
-			<h3>I am a&#8230; 😎</h3>
+			<h3>I am a&#8230;</h3>
 			<ul>
 				<li>competitor with myself</li>
 				<li>good mediator</li>
@@ -147,7 +154,7 @@
 		</section>
 	</div>
 
-	<div data-grid>
+	<div class="resume__grid">
 		<section>
 			<h2>Expertise 👨‍🍳</h2>
 			<ul>
@@ -163,8 +170,33 @@
 			<p>
 				<em>Università degli Studi di Firenze</em>, 2010.
 			</p>
-			<h3>Languages 🚩</h3>
-			<p>Fluent Italian; good English.</p>
+			<h3>Languages</h3>
+			<p>Native Italian, fluent English.</p>
 		</section>
 	</div>
+	<svelte:fragment slot="footer-print">
+		<small>Printed from <a href="https://ilmente.com/resume">ilmente.com/resume</a></small>
+	</svelte:fragment>
 </Layout>
+
+<style>
+	.resume__grid {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		gap: 1rem;
+		margin: 2rem 0;
+	}
+
+	@media only print {
+		.resume__grid {
+			grid-template-columns: 1fr 3fr;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.resume__grid {
+			display: block;
+			margin: 1rem 0;
+		}
+	}
+</style>

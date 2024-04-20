@@ -16,9 +16,6 @@
 		"lint": "prettier --check .",
 		"format": "prettier --write ."
 	},
-	"dependencies": {
-		"@fontsource-variable/material-symbols-rounded": "^5.0.28"
-	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
