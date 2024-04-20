@@ -1,19 +1,19 @@
 @media only screen {
-  [data-print-only] {
-    display: none;
-  }
+	[data-print-only] {
+		display: none;
+	}
 }
 
 @media only print {
-  :root {
-    font-size: 10px;
-  }
+	:root {
+		font-size: 10px;
+	}
 
-  h1 {
-    font-size: 4.5rem;
-  }
+	h1 {
+		font-size: 4.5rem;
+	}
 
-  [data-screen-only] {
-    display: none;
-  }
+	[data-screen-only] {
+		display: none;
+	}
 }

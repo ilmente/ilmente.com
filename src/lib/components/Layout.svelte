@@ -65,7 +65,7 @@
 			margin-top: 6rem;
 		}
 
-    .layout__wrapper {
+		.layout__wrapper {
 			padding: 1rem;
 		}
 	}

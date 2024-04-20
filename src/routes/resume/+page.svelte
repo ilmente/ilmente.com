@@ -24,7 +24,9 @@
 				{#if email}<li>📫 <a href="mailto:{email}">{email}</a></li>{/if}
 				<li><a href="https://ilmente.com" taregt="_blank">🌍 ilmente.com</a></li>
 				<li>
-					<a href="https://www.linkedin.com/in/ilmente" target="_blank">😎 linkedin.com/in/ilmente</a>
+					<a href="https://www.linkedin.com/in/ilmente" target="_blank"
+						>😎 linkedin.com/in/ilmente</a
+					>
 				</li>
 				<li><a href="https://github.com/ilmente" target="_blank">🤓 github.com/ilmente</a></li>
 			</ul>
