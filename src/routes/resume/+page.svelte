@@ -12,8 +12,7 @@
 	<p data-screen-only>
 		This is my official <em>curriculum vitae</em>.
 		<br />
-		It is actually printable (formatted for A4 - remove all the margins for a better result), but save
-		some paper and just create a pdf.
+		It is actually printable 🖨️ (formatted for A4 sheets), but save some paper 🌳 and just create a pdf.
 	</p>
 
 	<div class="resume__grid">

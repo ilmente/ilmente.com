@@ -7,11 +7,12 @@
 	<p>
 		My name is <strong>Alessandro Bellini</strong>. Welcome! 👋
 		<br />
-		I'm a geek who does love "frontending" and air drumming while coding. I also like taking photographs
-		here and there, cooking (and eating, probably even more), drinking way too much fine espresso coffee,
-		singing out loud (even in my office, when alone), playing bass guitar, dancing like a fool, watching
-		great animes, reading newspapers and dystopian books, travelling, meeting people and discovering
-		stuff.
+		I'm a geek who does love frontending and air drumming while coding. I also like to take photographs
+		here and there, cook (and eat, probably even more), drink way too much fine espresso coffee, sing
+		out loud (even in my office, when alone), pretend to be aple to play the bass guitar, dance like
+		a fool, watch great animes, read newspapers and extreme mountaneering books, spend all my savings
+		travelling around the world, nerd-out around watches, kink-out about backpacks, meet people and,
+		generally, discover stuff.
 	</p>
 	<p>
 		I'm from Pistoia, a small town in Italy. I spend there quite some time, but I live and work in
