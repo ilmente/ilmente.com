@@ -16,7 +16,7 @@
 		<footer class="layout__footer layout__footer--screen" data-screen-only>
 			<nav class="layout__nav">
 				<small>
-					Website handmade with ❤️ and Svelte by Alessandro Bellini |
+					Handmade with &heartsuit; and Svelte |
 					<a href="https://www.linkedin.com/in/ilmente/" target="_blank">Linkedin</a> |
 					<a href="https://github.com/ilmente/" target="_blank">Github</a>
 				</small>
