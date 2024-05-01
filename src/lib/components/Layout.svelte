@@ -13,10 +13,13 @@
 		<main>
 			<slot></slot>
 		</main>
-		<footer class="layout__footer" data-screen-only>
+		<footer class="layout__footer layout__footer--screen" data-screen-only>
 			<nav class="layout__nav">
-				<a href="https://github.com/ilmente/" target="_blank">Github</a> |
-				<a href="https://www.linkedin.com/in/ilmente/" target="_blank">Linkedin</a> | ilmente.com
+				<small>
+					Website handmade with ❤️ and Svelte by Alessandro Bellini |
+					<a href="https://www.linkedin.com/in/ilmente/" target="_blank">Linkedin</a> |
+					<a href="https://github.com/ilmente/" target="_blank">Github</a>
+				</small>
 			</nav>
 		</footer>
 		<footer class="layout__footer" data-print-only>
@@ -41,6 +44,10 @@
 
 	.layout__footer {
 		text-align: right;
+	}
+
+	.layout__footer--screen {
+		margin-bottom: 3rem;
 	}
 
 	@media only screen {

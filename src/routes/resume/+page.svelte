@@ -34,18 +34,20 @@
 		<section>
 			<h2>Hi! 👋</h2>
 			<p>
-				I'm a frontend enthusiast and a proper nerd. I do enjoy coding.
+				I'm a frontend enthusiast, a proper geek. I do enjoy coding.
 				<br />
-				In recent years I focused mainly on frontend architecture design for ecommerce platforms. I love
-				data flow and state managements, when thoroughly thought; functional and smooth UIs; solid testing,
+				In recent years I focused mainly on architecture design for ecommerce platforms. I love data
+				flow and state managements, when thoroughly thought; functional and smooth UIs; solid testing,
 				especialy when made easy to maintain.
 				<br />
-				When leading, I do invest time in building cohesive teams where everyone - me included - should
-				have the time and opportunity to grow (*) as professional.
+				Slowly, I managed to move away from an exclusively hands-on approach and got more and more involved
+				with product development. That was made possible by investing time in building cohesive teams
+				where everyone - me included - had the time and opportunity to grow (*) as professional, hence
+				increasing trust and delegation.
 				<br />
 				<small>
-					* Sourceability supported me in creating a program where the team read and presented one
-					book a month, during dedicated working hours. Getting paid to learn: how cool is that?
+					* Sourceability even supported me in creating a program where the team read and presented
+					one book a month, during dedicated working hours. Getting paid to learn: how cool is that?
 				</small>
 			</p>
 		</section>
@@ -67,13 +69,18 @@
 			</p>
 
 			<h3>I am a&#8230;</h3>
-			<ul>
-				<li>competitor with myself</li>
+			<ul class="bullet">
+				<li>frontend geek</li>
 				<li>good mediator</li>
-				<li>knowledge consumer</li>
-				<li>coffee maker</li>
+				<li>watch enthusiast</li>
+				<li>backpacks lover <small>#weirdo</small></li>
+				<li>photography amateur</li>
+				<li>big time traveler</li>
 				<li>challenge accepter</li>
+				<li>mediocre bass player</li>
+				<li>out-of-tune singer</li>
 				<li>uncoordinated dancer</li>
+				<li>coffee maker</li>
 				<li>
 					hard worker <small>#cliché</small>
 				</li>
@@ -95,7 +102,7 @@
 				<small>#sidehustle #everybodyisacofindertoday #typescript #react #nextjs</small>
 			</p>
 
-			<h4>Frontend Architect</h4>
+			<h4>Lead Frontend Architect</h4>
 			<h5>2019-2023, Sourceability @ remotely, mostly Berlin, DE</h5>
 			<p>
 				My main responsibility was to (re)design the frontend architecture and maintain{' '}
@@ -159,10 +166,11 @@
 	<div class="resume__grid">
 		<section>
 			<h2>Expertise 👨‍🍳</h2>
-			<ul>
-				<li>frontend development</li>
-				<li>frontend architecture design</li>
-				<li>team leading</li>
+			<ul class="bullet">
+				<li>all things frontend</li>
+				<li>software architecture design</li>
+				<li>product development</li>
+				<li>team leading and coaching</li>
 				<li>italian food and wine</li>
 			</ul>
 		</section>
@@ -177,7 +185,7 @@
 		</section>
 	</div>
 	<svelte:fragment slot="footer-print">
-		<small>Printed from <a href="https://ilmente.com/resume">ilmente.com/resume</a></small>
+		<small>Printed directly from <a href="https://ilmente.com/resume">ilmente.com/resume</a></small>
 	</svelte:fragment>
 </Layout>
 
